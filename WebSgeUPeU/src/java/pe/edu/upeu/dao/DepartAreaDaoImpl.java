@@ -6,10 +6,15 @@
 
 package pe.edu.upeu.dao;
 
+import org.springframework.stereotype.Repository;
+import pe.edu.upeu.modelo.GloDepartArea;
+import syscenterlife.dmp.core.data.DataAccess;
+
 /**
  *
  * @author USERS
  */
-public class DepartAreaDaoImpl {
+@Repository("DepartamentoAreaDao")
+public class DepartAreaDaoImpl extends DataAccess<GloDepartArea> implements DepartAreaDaoInterface{
     
 }

@@ -6,10 +6,13 @@
 
 package pe.edu.upeu.dao;
 
+import pe.edu.upeu.modelo.GloEstadoDepartamento;
+import syscenterlife.dmp.core.data.IDataAccess;
+
 /**
  *
  * @author USERS
  */
-public interface EstadoDepartDaoInterface {
+public interface EstadoDepartDaoInterface extends IDataAccess<GloEstadoDepartamento>{
     
 }

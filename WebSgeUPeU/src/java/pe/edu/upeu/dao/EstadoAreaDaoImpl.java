@@ -6,10 +6,15 @@
 
 package pe.edu.upeu.dao;
 
+import org.springframework.stereotype.Repository;
+import pe.edu.upeu.modelo.GloEstadoArea;
+import syscenterlife.dmp.core.data.DataAccess;
+
 /**
  *
  * @author USERS
  */
-public class EstadoAreaDaoImpl {
+@Repository("EstadoAreaDao")
+public class EstadoAreaDaoImpl extends DataAccess<GloEstadoArea> implements EstadoAreaDaoInterface{
     
 }
