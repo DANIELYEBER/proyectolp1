@@ -6,10 +6,9 @@
 
 package pe.edu.upeu.control;
 
-/**
- *
- * @author USERS
- */
+
+
+
 public class DepartArea {
     
 }
