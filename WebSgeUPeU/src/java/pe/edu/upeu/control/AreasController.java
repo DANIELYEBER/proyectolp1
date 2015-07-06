@@ -19,7 +19,7 @@ import org.springframework.web.servlet.ModelAndView;
   @Controller 
 public class AreasController {
     
-    @RequestMapping(value = "dmp", method = RequestMethod.GET)
+    @RequestMapping(value = "Diego", method = RequestMethod.GET)
     public ModelAndView inicio(){            
-        return new ModelAndView("admin/index");
+        return new ModelAndView("config/areas");
 }}
