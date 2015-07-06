@@ -6,10 +6,14 @@
 
 package pe.edu.upeu.dao;
 
+import pe.edu.upeu.modelo.GloAreas;
+import syscenterlife.dmp.core.data.IDataAccess;
+
 /**
  *
  * @author USERS
  */
-public interface AreasDaoInterface {
+public interface AreasDaoInterface extends IDataAccess<GloAreas>{
+    
     
 }
