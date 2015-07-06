@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-3.0.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">
+
+	<context:property-placeholder location="classpath:jdbc.properties" />
+	<context:component-scan base-package="pe.edu.upeu" />
+
+	<tx:annotation-driven transaction-manager="hibernateTransactionManager"/>
+
+	<bean id="dataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="${database.driver}" />
+		<property name="url" value="${database.url}" />
+		<property name="username" value="${database.user}" />
+		<property name="password" value="${database.password}" />
+	</bean>
+
+        <bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping" />
+        <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter" />        
+
+	<bean id="viewResolver"	class="pe.edu.upeu.util.ViewNameStartTilesUrlBasedViewResolver">
+		<property name="viewClass" value="org.springbyexample.web.servlet.view.tiles2.DynamicTilesView" />
+		<property name="prefix" value="/WEB-INF/app/" />
+		<property name="suffix" value=".jsp" />
+                <property name="tilesDefinitionName" value="modulosTemplate" />
+                <property name="viewNameStartsWith" value="modulos"/>
+                <property name="tilesDefinitionDelimiter" value="." />
+                <property name="tilesBodyAttributeName" value="body"/>
+                <property name="cache" value="false"/>
+                <property name="order" value="2"/>
+	</bean>
+	<bean id="viewResolver1" class="pe.edu.upeu.util.ViewNameStartTilesUrlBasedViewResolver">
+		<property name="viewClass" value="org.springbyexample.web.servlet.view.tiles2.DynamicTilesView" />
+		<property name="prefix" value="/WEB-INF/app/" />
+		<property name="suffix" value=".jsp" />
+                <property name="tilesDefinitionName" value="loginTemplate" />
+<!--                <property name="viewNameStartsWith" value="admin"/>-->
+                <property name="tilesDefinitionDelimiter" value="." />
+                <property name="tilesBodyAttributeName" value="body"/>
+                <property name="cache" value="false"/>
+                <property name="order" value="1"/>
+	</bean>
+        <bean id="tilesConfigurer" class="org.springframework.web.servlet.view.tiles2.TilesConfigurer">
+            <property name="definitions">
+                <list>
+                    <value>/WEB-INF/tiles.xml</value>
+                </list>
+            </property>
+        </bean>
+            
+
+
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="annotatedClasses">
+			<list>                          
+                             <value>pe.edu.upeu.modelo.GloUsuarioFilial</value>
+                            <value>pe.edu.upeu.modelo.GloEvidencia</value>
+                            <value>pe.edu.upeu.modelo.SysAccesoPrivilegio</value>
+                            <value>pe.edu.upeu.modelo.CorpTipo</value>
+                            <value>pe.edu.upeu.modelo.GloEjeestrategia</value>
+                            <value>pe.edu.upeu.modelo.GloDocidentidad</value>
+                            <value>pe.edu.upeu.modelo.GloTipoorden</value>
+                            <value>pe.edu.upeu.modelo.FinPartidapresupuestaria</value>
+                            <value>pe.edu.upeu.modelo.CorpEmpresa</value>
+                            <value>pe.edu.upeu.modelo.SysPerfiles</value>
+                            <value>pe.edu.upeu.modelo.SysAccesosPerfiles</value>
+                            <value>pe.edu.upeu.modelo.GloTiposeguimiento</value>
+                            <value>pe.edu.upeu.modelo.GloAreaEje</value>
+                            <value>pe.edu.upeu.modelo.GloPersona</value>
+                            <value>pe.edu.upeu.modelo.GloDepartArea</value>
+                            <value>pe.edu.upeu.modelo.ConfTemporada</value>
+                            <value>pe.edu.upeu.modelo.GloDepartamentosFilial</value>
+                            <value>pe.edu.upeu.modelo.GloMeta</value>
+                            <value>pe.edu.upeu.modelo.GloDepartCoordinador</value>
+                            <value>pe.edu.upeu.modelo.GloTemporadaejeestrategico</value>
+                            <value>pe.edu.upeu.modelo.GloTipoarea</value>
+                            <value>pe.edu.upeu.modelo.GloActividad</value>
+                            <value>pe.edu.upeu.modelo.FinNivelfinanciero</value>
+                            <value>pe.edu.upeu.modelo.GloAvance</value>
+                            <value>pe.edu.upeu.modelo.GloTipometa</value>
+                            <value>pe.edu.upeu.modelo.CorpFilial</value>
+                            <value>pe.edu.upeu.modelo.CorpOrganizacion</value>
+                            <value>pe.edu.upeu.modelo.GloPerspectiva</value>
+                            <value>pe.edu.upeu.modelo.GloEstrategia</value>
+                            <value>pe.edu.upeu.modelo.SysAccesos</value>
+                            <value>pe.edu.upeu.modelo.GloDepartamentos</value>
+                            <value>pe.edu.upeu.modelo.GloEstrategiaindicador</value>
+                            <value>pe.edu.upeu.modelo.FinCuenta</value>
+                            <value>pe.edu.upeu.modelo.GloDepartareaCoordinador</value>
+                            <value>pe.edu.upeu.modelo.GloSeguimiento</value>
+                            <value>pe.edu.upeu.modelo.GloIndicador</value>
+                            <value>pe.edu.upeu.modelo.SysMenu</value>
+                            <value>pe.edu.upeu.modelo.GloEstadoFilial</value>
+                            <value>pe.edu.upeu.modelo.ConfPeriodo</value>
+                            <value>pe.edu.upeu.modelo.GloSignificancia</value>
+                            <value>pe.edu.upeu.modelo.GloAreas</value>
+                            <value>pe.edu.upeu.modelo.GloEstadoDepartamento</value>
+                            <value>pe.edu.upeu.modelo.GloEjeestrategico</value>
+                            <value>pe.edu.upeu.modelo.GloPuntocontrol</value>
+                            <value>pe.edu.upeu.modelo.GloEstadoArea</value>                           							
+                             							
+			</list>
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">${hibernate.dialect}</prop>
+				<prop key="hibernate.show_sql">${hibernate.show_sql}</prop>				
+				<prop key="hibernate.format_sql">${hibernate.format_sql}</prop>				
+			</props>
+		</property>
+	</bean>
+
+	<bean id="hibernateTransactionManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+        
+            
+        
+</beans>

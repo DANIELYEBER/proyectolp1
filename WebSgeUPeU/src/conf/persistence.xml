@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="WebSgeUPeUPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>pe.edu.upeu.modelo.GloUsuarioFilial</class>
+    <class>pe.edu.upeu.modelo.GloEvidencia</class>
+    <class>pe.edu.upeu.modelo.SysAccesoPrivilegio</class>
+    <class>pe.edu.upeu.modelo.CorpTipo</class>
+    <class>pe.edu.upeu.modelo.GloEjeestrategia</class>
+    <class>pe.edu.upeu.modelo.GloDocidentidad</class>
+    <class>pe.edu.upeu.modelo.GloTipoorden</class>
+    <class>pe.edu.upeu.modelo.FinPartidapresupuestaria</class>
+    <class>pe.edu.upeu.modelo.CorpEmpresa</class>
+    <class>pe.edu.upeu.modelo.SysPerfiles</class>
+    <class>pe.edu.upeu.modelo.SysAccesosPerfiles</class>
+    <class>pe.edu.upeu.modelo.GloTiposeguimiento</class>
+    <class>pe.edu.upeu.modelo.GloAreaEje</class>
+    <class>pe.edu.upeu.modelo.GloPersona</class>
+    <class>pe.edu.upeu.modelo.GloDepartArea</class>
+    <class>pe.edu.upeu.modelo.ConfTemporada</class>
+    <class>pe.edu.upeu.modelo.GloDepartamentosFilial</class>
+    <class>pe.edu.upeu.modelo.GloMeta</class>
+    <class>pe.edu.upeu.modelo.GloDepartCoordinador</class>
+    <class>pe.edu.upeu.modelo.GloTemporadaejeestrategico</class>
+    <class>pe.edu.upeu.modelo.GloTipoarea</class>
+    <class>pe.edu.upeu.modelo.GloActividad</class>
+    <class>pe.edu.upeu.modelo.FinNivelfinanciero</class>
+    <class>pe.edu.upeu.modelo.GloAvance</class>
+    <class>pe.edu.upeu.modelo.GloTipometa</class>
+    <class>pe.edu.upeu.modelo.CorpFilial</class>
+    <class>pe.edu.upeu.modelo.CorpOrganizacion</class>
+    <class>pe.edu.upeu.modelo.GloPerspectiva</class>
+    <class>pe.edu.upeu.modelo.GloEstrategia</class>
+    <class>pe.edu.upeu.modelo.SysAccesos</class>
+    <class>pe.edu.upeu.modelo.GloDepartamentos</class>
+    <class>pe.edu.upeu.modelo.GloEstrategiaindicador</class>
+    <class>pe.edu.upeu.modelo.FinCuenta</class>
+    <class>pe.edu.upeu.modelo.GloDepartareaCoordinador</class>
+    <class>pe.edu.upeu.modelo.GloSeguimiento</class>
+    <class>pe.edu.upeu.modelo.GloIndicador</class>
+    <class>pe.edu.upeu.modelo.SysMenu</class>
+    <class>pe.edu.upeu.modelo.GloEstadoFilial</class>
+    <class>pe.edu.upeu.modelo.ConfPeriodo</class>
+    <class>pe.edu.upeu.modelo.GloSignificancia</class>
+    <class>pe.edu.upeu.modelo.GloAreas</class>
+    <class>pe.edu.upeu.modelo.GloEstadoDepartamento</class>
+    <class>pe.edu.upeu.modelo.GloEjeestrategico</class>
+    <class>pe.edu.upeu.modelo.GloEstadoArea</class>
+    <class>pe.edu.upeu.modelo.GloPuntocontrol</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3307/db_corporationx"/>
+      <property name="javax.persistence.jdbc.password" value="123456"/>
+      <property name="javax.persistence.jdbc.driver" value="org.mariadb.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+    </properties>
+  </persistence-unit>
+</persistence>
