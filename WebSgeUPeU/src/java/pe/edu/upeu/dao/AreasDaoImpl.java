@@ -17,5 +17,11 @@ import syscenterlife.dmp.core.data.DataAccess;
 @Repository("AreasDao")
 public class AreasDaoImpl extends DataAccess<GloAreas> implements AreasDaoInterface{
   
+    
+
+  
+    
+    
+    
 
 }
