@@ -35,7 +35,8 @@
                         <td><fm:input path="codigo" size="60" /></td>
                     </tr>
 
-                    <tr>                        
+                    <tr>        
+                        
                         <td colspan="2">
                         <fm:hidden path="idPeriodo" />
                             <input type="submit" value="Guardar" >
