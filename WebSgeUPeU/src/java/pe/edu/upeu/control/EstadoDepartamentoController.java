@@ -32,8 +32,6 @@ public class EstadoDepartamentoController {
 @Autowired
 EstadoDepartamentoServicioInterface EstadoDepartamentoServicio;
 
-@Autowired
-TemporadaServicioInterface temporadaServicio;
    
 @RequestMapping(value = "EstadoDepartamento", method = RequestMethod.GET)   
 public ModelAndView inicioEstadoDepartamento(){
@@ -44,7 +42,7 @@ public ModelAndView inicioEstadoDepartamento(){
     modelo.put("saludo", "Hola amigos");
     System.out.println("Holassssssssss");
     
-    return new ModelAndView("modulo/config/periodo/mainPeriodo", modelo);
+    return new ModelAndView("modulo/config/estado_departamento/mainEstadoDepartamento", modelo);
 }
 
 @RequestMapping(value = "eliminarEstadoDepart", method = RequestMethod.GET)
@@ -53,7 +51,7 @@ public  ModelAndView eliminarEstadoDepartamento(HttpServletRequest r) {
    EstadoDepartamentoServicio.deleteEstadoDepartamento(idEstadoDepart);
     System.out.println("si llego al metodo");
     
-    return new ModelAndView(new RedirectView("periodo.upeu"));
+    return new ModelAndView(new RedirectView("estadodepart.upeu"));
 }
 
 
@@ -61,20 +59,20 @@ public  ModelAndView eliminarEstadoDepartamento(HttpServletRequest r) {
 public ModelAndView irFormulario(@ModelAttribute("modeloEstadoDepartamento") GloEstadoDepartamento EstadoDepartamento,BindingResult result ){
     Map<String, Object> modelo=new HashMap<String, Object> ();
     modelo.put("listaTemporada", "Holasssssssssss");
-    modelo.put("listaTemporadaX", temporadaServicio.listarTemporada());
+    modelo.put("listaTemporadaX", EstadoDepartamentoServicio.listarEstadoDepartamento());
     modelo.put("listaTemporada2", "");
     modelo.put("listaTemporada3", "");
-    System.out.println("Veeeeer"+temporadaServicio.listarTemporada().size());
-    return new ModelAndView("modulo/config/periodo/formPeriodo",modelo);
+    System.out.println("Veeeeer"+EstadoDepartamentoServicio.listarEstadoDepartamento().size());
+    return new ModelAndView("modulo/config/estado_departamento/formEstadoDepartamento",modelo);
 }
 @RequestMapping(value = "guardarEstadoDepartamento", method = RequestMethod.POST)
 public ModelAndView guardarEstadoDepartamentoXX(@ModelAttribute("modeloEstadoDepartamento") GloEstadoDepartamento EstadoDepartamento,
                                       BindingResult result ){
-    System.out.println("holass:"+EstadoDepartamento.getIdPeriodo());
+    System.out.println("holass:"+EstadoDepartamento.getIdEstadodepartamento());
         //EstadoDepartamento.setEstadometa("");
         //EstadoDepartamento.setEstadoavance(new Date());
         EstadoDepartamentoServicio.saveEstadoDepartamento(EstadoDepartamento);
-    return new ModelAndView(new RedirectView("periodo.upeu"));
+    return new ModelAndView(new RedirectView("estadodepart.upeu"));
 }
 
 @RequestMapping(value = "modificarEstadoDepartamento", method = RequestMethod.GET)
@@ -91,18 +89,18 @@ public String modificarEstadoDepartamentoX(HttpServletRequest r, Model model ){
        GloEstadoDepartamento EstadoDepartamento=null;
        EstadoDepartamento=EstadoDepartamentoServicio.buscarEstadoDepartamento(idEstadoDepartamento);
        model.addAttribute("ModeloEstadoDepartamento", EstadoDepartamento);
-       model.addAttribute("listaPeriodoX", EstadoDepartamentoServicio.listarEstadoDepartamento());
-    return "modulo/config/periodo/formUPeriodo";
+       model.addAttribute("listaEstadoDepartamentoX", EstadoDepartamentoServicio.listarEstadoDepartamento());
+    return "modulo/config/estado_departamento/formUEstadoDepartamento";
 }
   
 @RequestMapping(value = "actualizarEstadoDepartamento", method = RequestMethod.POST)
 public ModelAndView gactualizarEstadoDepartamentoXX(@ModelAttribute("ModeloPeriodo") GloEstadoDepartamento EstadoDepartamento,
                                       BindingResult result ){
-    System.out.println("holass:"+EstadoDepartamento.getIdPeriodo());
+    System.out.println("holass:"+EstadoDepartamento.getIdEstadodepartamento());
        // periodo.setFechaInicio(new Date());
        // periodo.setFechaFin(new Date());
         EstadoDepartamentoServicio.updateEstadoDepartamento(EstadoDepartamento);
-    return new ModelAndView(new RedirectView("EstadoDepartamento.upeu"));
+    return new ModelAndView(new RedirectView("estadodepart.upeu"));
 }
 
 
@@ -112,12 +110,9 @@ public  ModelAndView buscarEstadoDepartamento(HttpServletRequest r) {
     List<GloEstadoDepartamento> lista=EstadoDepartamentoServicio.buscarEstadoDepartamento(EstadoDepartamento);
     System.out.println(EstadoDepartamento+"Holasssssssssssssss:"+lista.size());
     Map<String, Object> modelo=new HashMap<String, Object> ();
-    modelo.put("ListaPeriodo", lista);
+    modelo.put("ListaEstadoDepartamento", lista);
     
    return new ModelAndView("modulo/config/estado_departamento/mainEstadoDepartamento",modelo);
-}
-
-
-}
+}}
 
 
