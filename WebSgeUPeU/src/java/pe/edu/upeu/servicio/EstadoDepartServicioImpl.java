@@ -6,10 +6,54 @@
 
 package pe.edu.upeu.servicio;
 
+import java.util.List;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
+import pe.edu.upeu.dao.PeriodoDaoInterface;
+import pe.edu.upeu.modelo.ConfPeriodo;
+import pe.edu.upeu.modelo.GloEstadoDepartamento;
+
 /**
  *
- * @author USERS
+ * @author SistemasUpeu
  */
-public class EstadoDepartServicioImpl {
+@Service(value = "EstadoDepartServicio")
+@Transactional(propagation = Propagation.SUPPORTS, readOnly = true)
+public class EstadoDepartServicioImpl implements PeriodoServicioInterface{
+    
+    @Autowired
+    public PeriodoDaoInterface periododao;
+    
+    
+    @Override
+    public List<GloEstadoDepartamento> listarPeriodo(){
+        return periododao.getListAll();
+    }
+    
+    @Override
+    public void savePeriodo(ConfPeriodo periodo){
+        periododao.save(periodo);
+    }
+    
+    @Override
+    public void deletePeriodo(int idPeriodo){
+       periododao.delete(idPeriodo);
+   }
+    
+    @Override
+    public void updatePeriodo(ConfPeriodo periodo){
+       periododao.update(periodo);
+   }
+    @Override
+    public ConfPeriodo buscarPeriodo(int idperiodo){
+       return periododao.getById(idperiodo);
+   }
+    @Override
+    public List<ConfPeriodo> buscarPeriodo(String periodo){
+       return periododao.buscarPeriodo(periodo);
+   }
+
     
 }
