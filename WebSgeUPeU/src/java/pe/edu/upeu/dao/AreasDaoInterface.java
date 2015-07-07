@@ -17,7 +17,6 @@ import syscenterlife.dmp.core.data.IDataAccess;
  * @author USERS
  */
 public interface AreasDaoInterface extends IDataAccess<GloAreas>{
-
     public List<GloAreas> buscarAreas(String areas);
 
     
