@@ -15,13 +15,10 @@
     <body>
         <div>
 <!--            `id_areas``nombre``descripcion``codigo`-->
-            <c:url var="saveperiodox"  value="guardarAreas.upeu" />
-            <fm:form modelAttribute="modeloAreas" method="post" action="${saveperiodox}">
+            <c:url var="saveAreas"  value="guardarAreas.upeu" />
+            <fm:form modelAttribute="modeloAreas" method="post" action="${saveAreas}">
                 <table>
-                    <tr>
-                        <td><fm:label path="id_areas">id Area</fm:label> </td>
-                        <td><fm:input path="id_areas" /></td>
-                    </tr>
+                   
                     <tr>
                         <td><fm:label path="nombre">Nombre</fm:label> </td>
                         <td><fm:input path="nombre" size="60" /></td>

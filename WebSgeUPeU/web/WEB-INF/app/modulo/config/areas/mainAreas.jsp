@@ -18,7 +18,7 @@
         
         <h1>Administracion de Areas!</h1>
         <a href="dmp1.upeu">Regresar inicio</a> &emsp14;
-        <a href="formArea.upeu">Crear Area</a>
+        <a href="formAreas.upeu">Crear Area</a>
        
         
         <div id="idFormulario" align="center">
@@ -30,7 +30,7 @@
         &nbsp;&nbsp;
         <td  style="color:black">
             
-        Periodo <input type="text" class="myinput" id="area" size="50" name="area"  value="">
+        Areas <input type="text" class="myinput" id="area" size="50" name="area"  value="">
         
         <input  type="submit"  class="button2" value="Buscar" >&nbsp;
         </td>
@@ -47,6 +47,7 @@
                     <th>nombre</th>
                     <th>descripcion</th>
                     <th>codigo</th>
+                    <th>opciones</th>
 
                     
                 </tr>
@@ -57,10 +58,9 @@
                     <td><c:out value="${dato.nombre}"/></td>
                     <td><c:out value="${dato.descripcion}"/></td>
                     <td><c:out value="${dato.codigo}"/></td>
-                    <td></td>
                     <td>
-                        <a href="eliminarper.upeu?idperiodox=${dato.idAreas}">Eliminar</a>&emsp14;
-                        <a href="modificarAreaX.upeu?idPeriodo=${dato.idAreas}">Modificar</a>
+                        <a href="eliminarareas.upeu?idareasx=${dato.idAreas}">Eliminar</a>&emsp14;
+                        <a href="modificarAreasX.upeu?idAreas=${dato.idAreas}">Modificar</a>
                     </td>
                     
                 </tr>

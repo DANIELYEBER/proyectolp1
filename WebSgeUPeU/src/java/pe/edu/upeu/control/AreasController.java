@@ -50,7 +50,7 @@ public ModelAndView inicioAreas(){
 }
 
 @RequestMapping(value = "eliminarareas", method = RequestMethod.GET)
-public  ModelAndView eliminarPeriodo(HttpServletRequest r) {
+public  ModelAndView eliminarAreas(HttpServletRequest r) {
     int idareas=Integer.parseInt(r.getParameter("idareasx"));
     AreasServicio.deleteAreas(idareas);
     System.out.println("si llego al metodo");
@@ -77,7 +77,7 @@ public ModelAndView guardarAreasXX(@ModelAttribute("modeloAreas") GloAreas areas
     System.out.println("holass:"+areas.getIdAreas());
         
         AreasServicio.saveAreas(areas);
-    return new ModelAndView(new RedirectView("Areas.upeu"));
+    return new ModelAndView(new RedirectView("areas.upeu"));
 }
 
 @RequestMapping(value = "modificarAreas", method = RequestMethod.GET)

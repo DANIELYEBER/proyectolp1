@@ -15,13 +15,10 @@
     <body>
         <div>
 <!--            `id_areas``nombre``descripcion``codigo`-->
-            <c:url var="updateAreas"  value="actualizarArea.upeu" />
+            <c:url var="updateAreas"  value="actualizarAreas.upeu" />
             <fm:form modelAttribute="ModeloAreas" method="post" action="${updateAreas}">
                 <table>
-                    <tr>
-                        <td><fm:label path="id_areas">id Area</fm:label> </td>
-                        <td><fm:input path="id_areas" /></td>
-                    </tr>
+                    
                     <tr>
                         <td><fm:label path="nombre">Nombre</fm:label> </td>
                         <td><fm:input path="nombre" size="60" /></td>
@@ -38,7 +35,7 @@
                     <tr>        
                         
                         <td colspan="2">
-                        <fm:hidden path="idPeriodo" />
+                        <fm:hidden path="idAreas" />
                             <input type="submit" value="Guardar" >
                         </td>
                     </tr>

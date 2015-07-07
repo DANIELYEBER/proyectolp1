@@ -260,7 +260,8 @@
               </a>
               <ul class="treeview-menu">
                   <li class="active"><a href="periodo.upeu" target="home"><i class="fa fa-circle-o"></i>Adm. Periodo</a></li>
-                <li><a href="index2.html"><i class="fa fa-circle-o"></i> Adm. Temporada</a></li>
+                  <li><a href="index2.html"><i class="fa fa-circle-o"></i> Adm. Temporada</a></li>
+                  <li class="active"><a href="areas.upeu" target="home"><i class="fa fa-circle-o"></i>Glo. Areas</a></li>
               </ul>
             </li>
 
