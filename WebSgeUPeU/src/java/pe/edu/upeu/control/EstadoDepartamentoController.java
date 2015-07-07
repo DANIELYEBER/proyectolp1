@@ -69,58 +69,5 @@ public ModelAndView irFormulario(@ModelAttribute("modeloEstadoDepartamento") Glo
     modelo.put("listaTemporada3", "");
     System.out.println("Veeeeer"+temporadaServicio.listarTemporada().size());
     return new ModelAndView("modulo/config/periodo/formPeriodo",modelo);
-}
+}}
 
-
-@RequestMapping(value = "guardarEstadoDepartamento", method = RequestMethod.POST)
-public ModelAndView guardarEstadoDepartamentoXX(@ModelAttribute("modeloEstadoDepartamento") GloEstadoDepartamento EstadoDepartamento,
-                                      BindingResult result ){
-    System.out.println("holass:"+EstadoDepartamento.getIdTemporada());
-        periodo.setFechaInicio(new Date());
-        periodo.setFechaFin(new Date());
-        periodoServicio.savePeriodo(periodo);
-    return new ModelAndView(new RedirectView("periodo.upeu"));
-}
-
-@RequestMapping(value = "modificarEstadoDepartamento", method = RequestMethod.GET)
-public ModelAndView modificarEstadoDepartamento(HttpServletRequest r ){
-   int idEstadoDepartamento=Integer.parseInt(r.getParameter("idEstadoDepartamento"));
-       GloEstadoDepartamento EstadoDepartamento=null;
-       EstadoDepartamento=EstadoDepartamentoServicio.buscarEstadoDepartamento(idEstadoDepartamento);
-    return new ModelAndView("modulo/config/periodo/formUPeriodo","ModeloPeriodo",periodo);
-}
-
-@RequestMapping(value = "modificarPeriodoX", method = RequestMethod.GET)
-public String modificarPeriodoX(HttpServletRequest r, Model model ){
-   int idPeriodo=Integer.parseInt(r.getParameter("idPeriodo"));
-       ConfPeriodo periodo=null;
-       periodo=periodoServicio.buscarPeriodo(idPeriodo);
-       model.addAttribute("ModeloPeriodo", periodo);
-       model.addAttribute("listaTemporadaX", temporadaServicio.listarTemporada());
-    return "modulo/config/periodo/formUPeriodo";
-}
-  
-@RequestMapping(value = "actualizarPeriodo", method = RequestMethod.POST)
-public ModelAndView gactualizarPeriodoXX(@ModelAttribute("ModeloPeriodo") ConfPeriodo periodo,
-                                      BindingResult result ){
-    System.out.println("holass:"+periodo.getIdTemporada());
-       // periodo.setFechaInicio(new Date());
-       // periodo.setFechaFin(new Date());
-        periodoServicio.updatePeriodo(periodo);
-    return new ModelAndView(new RedirectView("periodo.upeu"));
-}
-
-
-@RequestMapping(value = "buscarPeriodox", method = RequestMethod.POST)
-public  ModelAndView buscarPeriodo(HttpServletRequest r) {
-    String periodo=r.getParameter("periodo")==null ? "":r.getParameter("periodo");
-    List<ConfPeriodo> lista=periodoServicio.buscarPeriodo(periodo);
-    System.out.println(periodo+"Holasssssssssssssss:"+lista.size());
-    Map<String, Object> modelo=new HashMap<String, Object> ();
-    modelo.put("ListaPeriodo", lista);
-    
-   return new ModelAndView("modulo/config/periodo/mainPeriodo",modelo);
-}
-
-
-}
