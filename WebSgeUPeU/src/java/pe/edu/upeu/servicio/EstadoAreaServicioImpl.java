@@ -41,7 +41,7 @@ public class EstadoAreaServicioImpl implements EstadoAreaServicioInterface{
     
     @Override
     public void updateEstadoArea(GloEstadoArea estadoArea){
-       estadoAreaDao.update(estadoAreaDao);
+       estadoAreaDao.update(estadoArea);
    }
     @Override
     public GloEstadoArea buscarEstadoArea(int idEstadoArea){

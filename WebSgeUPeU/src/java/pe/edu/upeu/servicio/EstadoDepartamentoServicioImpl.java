@@ -41,7 +41,7 @@ public class EstadoDepartamentoServicioImpl implements EstadoDepartamentoServici
     
     @Override
     public void updateEstadoDepartamento(GloEstadoDepartamento estadoDepartamento){
-       estadoDepartamentoDao.update(estadoDepartamentoDao);
+       estadoDepartamentoDao.update(estadoDepartamento);
    }
     @Override
     public GloEstadoDepartamento buscarEstadoDepartamento(int idEstadoDepartamento){

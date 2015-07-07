@@ -32,7 +32,7 @@ public class DepartamentosServicioImpl implements DepartamentosServicioInterface
     
     @Override
     public void saveDepartamentos (GloDepartamentos departamentos){
-        DepartamentosDao.save(DepartamentosDao);
+        DepartamentosDao.save(departamentos);
     }
     
     @Override
