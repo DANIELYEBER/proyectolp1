@@ -3,8 +3,9 @@
     Created on : 06/07/2015, 06:23:44 PM
     Author     : USERS
 --%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="fm" uri="http://www.springframework.org/tags/form" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,6 +13,36 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <div>
+<!--            `id_areas``nombre``descripcion``codigo`-->
+            <c:url var="saveperiodox"  value="actualizarAreaupeu" />
+            <fm:form modelAttribute="ModeloArea" method="post" action="${saveperiodox}">
+                <table>
+                    <tr>
+                        <td><fm:label path="id_areas">id Area</fm:label> </td>
+                        <td><fm:input path="id_areas" /></td>
+                    </tr>
+                    <tr>
+                        <td><fm:label path="nombre">Nombre</fm:label> </td>
+                        <td><fm:input path="nombre" size="60" /></td>
+                    </tr>
+                    <tr>
+                        <td><fm:label path="descripcion">Descripci&oacute;n</fm:label> </td>
+                        <td><fm:input path="descripcion" size="60" /></td>
+                    </tr>
+                    <tr>
+                        <td><fm:label path="codigo">Codigo</fm:label> </td>
+                        <td><fm:input path="codigo" size="60" /></td>
+                    </tr>
+
+                    <tr>                        
+                        <td colspan="2">
+                        <fm:hidden path="idPeriodo" />
+                            <input type="submit" value="Guardar" >
+                        </td>
+                    </tr>
+                </table>                
+            </fm:form>         
+        </div>
     </body>
 </html>

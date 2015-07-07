@@ -10,6 +10,8 @@ import org.springframework.stereotype.Repository;
 import pe.edu.upeu.modelo.GloDepartArea;
 import syscenterlife.dmp.core.data.DataAccess;
 
+
+
 /**
  *
  * @author USERS
