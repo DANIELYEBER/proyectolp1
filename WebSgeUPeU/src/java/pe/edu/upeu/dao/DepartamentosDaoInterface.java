@@ -17,10 +17,6 @@ import syscenterlife.dmp.core.data.IDataAccess;
  */
 public interface DepartamentosDaoInterface extends IDataAccess<GloDepartamentos>{
 
-    public void save(DepartamentosDaoInterface DepartamentosDao);
-
-    public void update(DepartamentosDaoInterface DepartamentosDao);
-
     public List<GloDepartamentos> buscarDepartamentos(String Departamentos);
 
    

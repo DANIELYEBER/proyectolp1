@@ -42,7 +42,7 @@ public class DepartamentosServicioImpl implements DepartamentosServicioInterface
     
     @Override
     public void updateDepartamentos(GloDepartamentos departamentos){
-       DepartamentosDao.update(DepartamentosDao);
+       DepartamentosDao.update(departamentos);
    }
     @Override
     public GloDepartamentos buscarDepartamentos(int idDepartamentos){
