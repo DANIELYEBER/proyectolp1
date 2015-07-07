@@ -33,10 +33,7 @@
                     </tr>
 
                     <tr>        
-                        
-                        
-                        
-                        
+                                               
                         <td colspan="2">
                         <fm:hidden path="idAreas" />
                             <input type="submit" value="Guardar" >
