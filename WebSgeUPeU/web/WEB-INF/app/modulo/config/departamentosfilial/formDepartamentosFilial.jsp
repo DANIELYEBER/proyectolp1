@@ -21,7 +21,7 @@
      
                     
                     <tr>
-                        <td><fm:label path="idTemporada.idTemporada">Temporada</fm:label> </td>
+                        <td><fm:label path="idTemporada.idTemporada">Temporadass</fm:label> </td>
                         <td>
                         <fm:select path="idTemporada.idTemporada">
                             <fm:options items="${listaTemporadaX}" itemLabel="descripcion" itemValue="idTemporada" />
