@@ -6,15 +6,19 @@
 
 package pe.edu.upeu.dao;
 
-import org.springframework.stereotype.Repository;
+
+import java.util.List;
 import pe.edu.upeu.modelo.GloDepartamentosFilial;
-import syscenterlife.dmp.core.data.DataAccess;
+import syscenterlife.dmp.core.data.IDataAccess;
 
 /**
  *
  * @author USERS
  */
-@Repository("DepartamentoFiDao")
-public class DepartamentoFiDaoImpl extends DataAccess<GloDepartamentosFilial> implements DepartamentoFiDaoInterface{
+public interface DepartamentosFiDaoInterface extends IDataAccess<GloDepartamentosFilial>{
+
+    public List<GloDepartamentosFilial> buscarDepartamentosFi(String DepartamentosFi);
+
+ 
     
 }

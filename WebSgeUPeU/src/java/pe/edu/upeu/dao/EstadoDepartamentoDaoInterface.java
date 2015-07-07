@@ -6,13 +6,19 @@
 
 package pe.edu.upeu.dao;
 
-import pe.edu.upeu.modelo.GloDepartamentosFilial;
+
+import java.util.List;
+import pe.edu.upeu.modelo.GloEstadoDepartamento;
 import syscenterlife.dmp.core.data.IDataAccess;
 
 /**
  *
  * @author USERS
  */
-public interface DepartamentoFiDaoInterface extends IDataAccess<GloDepartamentosFilial>{
+public interface EstadoDepartamentoDaoInterface extends IDataAccess<GloEstadoDepartamento>{
+
+    public List<GloEstadoDepartamento> buscarEstadoDepartamento(String EstadoDepartamento);
+
+    
     
 }

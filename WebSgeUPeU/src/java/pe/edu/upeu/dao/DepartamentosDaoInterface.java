@@ -6,6 +6,8 @@
 
 package pe.edu.upeu.dao;
 
+
+import java.util.List;
 import pe.edu.upeu.modelo.GloDepartamentos;
 import syscenterlife.dmp.core.data.IDataAccess;
 
@@ -14,5 +16,9 @@ import syscenterlife.dmp.core.data.IDataAccess;
  * @author USERS
  */
 public interface DepartamentosDaoInterface extends IDataAccess<GloDepartamentos>{
+
+    public List<GloDepartamentos> buscarDepartamentos(String Departamentos);
+
+   
     
 }

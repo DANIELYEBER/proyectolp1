@@ -6,6 +6,8 @@
 
 package pe.edu.upeu.dao;
 
+
+import java.util.List;
 import pe.edu.upeu.modelo.GloDepartArea;
 import syscenterlife.dmp.core.data.IDataAccess;
 
@@ -14,5 +16,8 @@ import syscenterlife.dmp.core.data.IDataAccess;
  * @author USERS
  */
 public interface DepartAreaDaoInterface extends IDataAccess<GloDepartArea>{
+
+    public List<GloDepartArea> buscarDepartArea(String DepartArea);
+
     
 }
