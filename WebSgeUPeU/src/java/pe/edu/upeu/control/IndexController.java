@@ -44,7 +44,6 @@ public class IndexController{
     @RequestMapping(value = "mainPeriodo", method = RequestMethod.GET)
     public ModelAndView mainPeriodo(){    
         return new ModelAndView("modulo/config/periodo/mainPeriodo");
-    }
-
-    
+    } 
+     
 }

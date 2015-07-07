@@ -15,12 +15,12 @@
     </head>
     <body>
         <div>
-            <c:url var="saveperiodox"  value="guardarPeriodo.upeu" />
-            <fm:form modelAttribute="modeloPeriodo" method="post" action="${saveperiodox}">
+            <c:url var="saveEstadoDepartamentox"  value="guardarEstadoDepartamento.upeu" />
+            <fm:form modelAttribute="modeloEstadoDepartamento" method="post" action="${saveEstadoDepartamentox}">
                 <table>
                     <tr>
-                        <td><fm:label path="periodo">Periodo</fm:label> </td>
-                        <td><fm:input path="periodo" /></td>
+                        <td><fm:label path="EstadoDepartamento">EstadoDepartamento</fm:label> </td>
+                        <td><fm:input path="EstadoDepartamento" /></td>
                     </tr>
                     <tr>
                         <td><fm:label path="descripcion">Descripci&oacute;n</fm:label> </td>
@@ -28,10 +28,10 @@
                     </tr>
                     
                     <tr>
-                        <td><fm:label path="idTemporada.idTemporada">Temporada</fm:label> </td>
+                        <td><fm:label path="idPeriodo.idPeriodo">Periodo</fm:label> </td>
                         <td>
-                        <fm:select path="idTemporada.idTemporada">
-                            <fm:options items="${listaTemporadaX}" itemLabel="descripcion" itemValue="idTemporada" />
+                        <fm:select path="idPeriodo.idPeriodo">
+                            <fm:options items="${listaPeriodoX}" itemLabel="descripcion" itemValue="idPeriodo" />
                         </fm:select>
                             
                         </td>
