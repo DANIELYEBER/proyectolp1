@@ -23,3 +23,35 @@
         <a href="dmp1.upeu">Regresar inicio</a> &emsp14;
         <a href="formDepartamentos.upeu">Crear Departamentos</a>
        
+        
+        <div id="idFormulario" align="center">
+            
+        <form  id="formBuscar" action="buscarDepartamento.upeu"  method="post" name="formBuscar" >
+        <table align="center"  class="myform">
+        
+        <tr align="center">
+        &nbsp;&nbsp;
+        <td  style="color:black">
+            
+        Areas <input type="text" class="myinput" id="departamentos" size="50" name="departamentos"  value="">
+        
+        <input  type="submit"  class="button2" value="Buscar" >&nbsp;
+        </td>
+        </tr>
+        </table>
+        </form>
+        </div> 
+        <!--            `id_areas``nombre``descripcion``codigo`-->
+        
+        <c:if test="${!empty ListaDepartamentos}">
+            <table >
+                <tr>
+                    
+                    <th>nombre</th>
+                    <th>descripcion</th>
+                    <th>codigo</th>
+                    <th>opciones</th>
+
+                    
+                </tr>
+       
