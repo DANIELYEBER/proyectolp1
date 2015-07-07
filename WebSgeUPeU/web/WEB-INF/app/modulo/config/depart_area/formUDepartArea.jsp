@@ -15,8 +15,8 @@
     <body>
         <div>
 <!--            ``id_depart_area``id_areas``id_departamento_filial`
-            <c:url var="updateAreas"  value="actualizarAreas.upeu" />
-            <fm:form modelAttribute="ModeloAreas" method="post" action="${updateAreas}">
+            <c:url var="updatedepartarea"  value="actualizardepartarea.upeu" />
+            <fm:form modelAttribute="Modelodepartarea" method="post" action="${updateAreas}">
                 <table>
 
                     <tr>
