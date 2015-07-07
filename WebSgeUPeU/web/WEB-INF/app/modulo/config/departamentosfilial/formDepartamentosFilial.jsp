@@ -15,22 +15,36 @@
     </head>
     <body>
         <div>
-            <c:url var="saveperiodox"  value="guardarPeriodo.upeu" />
-            <fm:form modelAttribute="modeloPeriodo" method="post" action="${saveperiodox}">
-                <table>
-     
-                    
+            <c:url var="savedepartamentosfilialx"  value="guardarDepartementosFi.upeu" />
+            <fm:form modelAttribute="modeloDepartamentosFi" method="post" action="${savedepartamentosfilialx}">
+                <table>                   
+                     <tr>
+                        <td><fm:label path="idFilial.idFilial">Filiales</fm:label> </td>
+                        <td>
+                        <fm:select path="idFilial.idFilial">
+                            <fm:options items="${listaDepartamentosFiX}" itemLabel="descripcion" itemValue="idDepartamentoFilial" />
+                        </fm:select>
+                            
+                        </td>
+                    </tr> 
                     <tr>
-                        <td><fm:label path="idTemporada.idTemporada">Temporadass</fm:label> </td>
+                        <td><fm:label path="idTemporada.idTemporada">Departamento</fm:label> </td>
                         <td>
                         <fm:select path="idTemporada.idTemporada">
                             <fm:options items="${listaTemporadaX}" itemLabel="descripcion" itemValue="idTemporada" />
                         </fm:select>
                             
                         </td>
-                    </tr>                    
-                   
-                    
+                    </tr>  
+                     <tr>
+                        <td><fm:label path="idTemporada.idTemporada">Tipo Area</fm:label> </td>
+                        <td>
+                        <fm:select path="idTemporada.idTemporada">
+                            <fm:options items="${listaTemporadaX}" itemLabel="descripcion" itemValue="idTemporada" />
+                        </fm:select>
+                            
+                        </td>
+                    </tr> 
                     <tr>                        
                         <td colspan="2"><input type="submit" value="Enviar" > </td>
                     </tr>
