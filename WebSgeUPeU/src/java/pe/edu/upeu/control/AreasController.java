@@ -109,7 +109,7 @@ public ModelAndView actualizarAreasXX(@ModelAttribute("ModeloAreas") GloAreas ar
 }
 
 
-@RequestMapping(value = "buscarAreasx", method = RequestMethod.POST)
+@RequestMapping(value = "buscarAreasX", method = RequestMethod.POST)
 public  ModelAndView buscarAreas(HttpServletRequest r) {
     String areas=r.getParameter("areas")==null ? "":r.getParameter("areas");
     List<GloAreas> lista=AreasServicio.buscarAreas(areas);
