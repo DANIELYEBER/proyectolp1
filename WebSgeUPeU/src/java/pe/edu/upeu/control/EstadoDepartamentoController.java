@@ -6,15 +6,12 @@
 package pe.edu.upeu.control;
 
 
-import java.util.Date;
 import java.util.HashMap;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
-import pe.edu.upeu.modelo.ConfPeriodo;
-import pe.edu.upeu.servicio.PeriodoServicioInterface;
 import java.util.List;
 import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
@@ -69,5 +66,58 @@ public ModelAndView irFormulario(@ModelAttribute("modeloEstadoDepartamento") Glo
     modelo.put("listaTemporada3", "");
     System.out.println("Veeeeer"+temporadaServicio.listarTemporada().size());
     return new ModelAndView("modulo/config/periodo/formPeriodo",modelo);
-}}
+}
+@RequestMapping(value = "guardarEstadoDepartamento", method = RequestMethod.POST)
+public ModelAndView guardarEstadoDepartamentoXX(@ModelAttribute("modeloEstadoDepartamento") GloEstadoDepartamento EstadoDepartamento,
+                                      BindingResult result ){
+    System.out.println("holass:"+EstadoDepartamento.getIdPeriodo());
+        //EstadoDepartamento.setEstadometa("");
+        //EstadoDepartamento.setEstadoavance(new Date());
+        EstadoDepartamentoServicio.saveEstadoDepartamento(EstadoDepartamento);
+    return new ModelAndView(new RedirectView("periodo.upeu"));
+}
+
+@RequestMapping(value = "modificarEstadoDepartamento", method = RequestMethod.GET)
+public ModelAndView modificarEstadoDepartamento(HttpServletRequest r ){
+   int idEstadoDepartamento=Integer.parseInt(r.getParameter("idEstadoDepartamento"));
+       GloEstadoDepartamento EstadoDepartamento=null;
+       EstadoDepartamento=EstadoDepartamentoServicio.buscarEstadoDepartamento(idEstadoDepartamento);
+    return new ModelAndView("modulo/config/estado_departamento/formUEstadoDepartamentoo","ModeloEstadoDepartamento",EstadoDepartamento);
+}
+
+@RequestMapping(value = "modificarEstadoDepartamentoX", method = RequestMethod.GET)
+public String modificarEstadoDepartamentoX(HttpServletRequest r, Model model ){
+   int idEstadoDepartamento=Integer.parseInt(r.getParameter("idEstadoDepartamento"));
+       GloEstadoDepartamento EstadoDepartamento=null;
+       EstadoDepartamento=EstadoDepartamentoServicio.buscarEstadoDepartamento(idEstadoDepartamento);
+       model.addAttribute("ModeloEstadoDepartamento", EstadoDepartamento);
+       model.addAttribute("listaPeriodoX", EstadoDepartamentoServicio.listarEstadoDepartamento());
+    return "modulo/config/periodo/formUPeriodo";
+}
+  
+@RequestMapping(value = "actualizarEstadoDepartamento", method = RequestMethod.POST)
+public ModelAndView gactualizarEstadoDepartamentoXX(@ModelAttribute("ModeloPeriodo") GloEstadoDepartamento EstadoDepartamento,
+                                      BindingResult result ){
+    System.out.println("holass:"+EstadoDepartamento.getIdPeriodo());
+       // periodo.setFechaInicio(new Date());
+       // periodo.setFechaFin(new Date());
+        EstadoDepartamentoServicio.updateEstadoDepartamento(EstadoDepartamento);
+    return new ModelAndView(new RedirectView("EstadoDepartamento.upeu"));
+}
+
+
+@RequestMapping(value = "buscarEstadoDepartamentox", method = RequestMethod.POST)
+public  ModelAndView buscarEstadoDepartamento(HttpServletRequest r) {
+    String EstadoDepartamento=r.getParameter("EstadoDepartamento")==null ? "":r.getParameter("EstadoDepartamento");
+    List<GloEstadoDepartamento> lista=EstadoDepartamentoServicio.buscarEstadoDepartamento(EstadoDepartamento);
+    System.out.println(EstadoDepartamento+"Holasssssssssssssss:"+lista.size());
+    Map<String, Object> modelo=new HashMap<String, Object> ();
+    modelo.put("ListaPeriodo", lista);
+    
+   return new ModelAndView("modulo/config/estado_departamento/mainEstadoDepartamento",modelo);
+}
+
+
+}
+
 
