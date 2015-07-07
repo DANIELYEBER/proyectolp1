@@ -42,26 +42,27 @@
         <c:if test="${!empty ListaEstadoDepartamento}">
             <table >
                 <tr>
-                    <th>Periodo</th>
-                    <th>F. Inicio</th>
-                    <th>F. fin</th>
-                    <th>Periodo</th>
-                    <th>Temporada</th>
-                    <th>Estado</th>
+                    <th>EstadoMeta</th>
+                    <th>EstadoAvance</th>
+                    <th>EstadoPoa</th>
+                    <th>EstadoPm</th>
+                    <th>idPeriodo</th>
+                    <th>idDepartamentoFilial</th>
                     <th>Opciones</th>
                     
                 </tr>
                 
                 <c:forEach items="${ListaEstadoDepartamento}" var= "dato">   
                 <tr>
-                    <td><c:out value="${dato.periodo}"/></td>
-                    <td><c:out value="${dato.fechaInicio}"/></td>
-                    <td><c:out value="${dato.fechaFin}"/></td>
-                    <td><c:out value="${dato.idTemporada.descripcion}"/></td>
-                    <td><c:out value="${dato.estado}"/></td>
+                    <td><c:out value="${dato.EstadoMeta}"/></td>
+                    <td><c:out value="${dato.EstadoAvance}"/></td>
+                    <td><c:out value="${dato.EstadoPoa}"/></td>
+                    <td><c:out value="${dato.EstadoPm}"/></td>
+                    <td><c:out value="${dato.idPeriodo.descripcion}"/></td>
+                    <td><c:out value="${dato.idDepartamentoFilial.idDepartamentoFilial}"/></td>
                     <td></td>
                     <td>
-                        <a href="eliminarper.upeu?idEstadoDepartamentox=${dato.idEstadoDepartamento}">Eliminar</a>&emsp14;
+                        <a href="eliminarEstadoDepartamento.upeu?idEstadoDepartamentox=${dato.idEstadoDepartamento}">Eliminar</a>&emsp14;
                         <a href="modificarEstadoDepartamentoX.upeu?idEstadoDepartamento=${dato.idEstadoDepartamento}">Modificar</a>
                     </td>
                     
