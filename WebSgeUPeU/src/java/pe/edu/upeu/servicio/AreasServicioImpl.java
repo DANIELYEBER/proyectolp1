@@ -42,7 +42,7 @@ public class AreasServicioImpl implements AreasServicioInterface{
    }
     
     @Override
-    public void updatePeriodo(GloAreas areas){
+    public void updateAreas(GloAreas areas){
        areasDao.update(areas);
    }
     @Override

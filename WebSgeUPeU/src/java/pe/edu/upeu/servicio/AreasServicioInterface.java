@@ -17,7 +17,7 @@ public interface AreasServicioInterface {
 public List<GloAreas> listarAreas();
 public void saveAreas(GloAreas areas);
     public void deleteAreas(int idAreas);
-        public void updatePeriodo(GloAreas areas);
+        public void updateAreas(GloAreas areas);
             public GloAreas buscarAreas(int idAreas);
                 public List<GloAreas> buscarAreas(String areas);
      
