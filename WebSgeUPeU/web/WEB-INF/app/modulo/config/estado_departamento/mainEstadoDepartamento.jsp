@@ -18,7 +18,7 @@
         
         <h1>Administracion de Estado Departamento!</h1>
         <a href="EstadoDepartamento.upeu">Regresar inicio</a> &emsp14;
-        <a href="formEstadoDepartamento.upeu">Crear Estado Departamento</a>
+        <a href="formEstadoDepartamento.upeu">Crear Estado.Dpto</a>
         
         
         <div id="idFormulario" align="center">
