@@ -15,6 +15,6 @@ import syscenterlife.dmp.core.data.DataAccess;
  * @author USERS
  */
 @Repository("DepartamentoFiDao")
-public class DepartamentoFiDaoImpl extends DataAccess<GloDepartamentosFilial> implements DepartamentoFiDaoInterface{
+public class DepartamentosFiDaoImpl extends DataAccess<GloDepartamentosFilial> implements DepartamentosFiDaoInterface{
     
 }

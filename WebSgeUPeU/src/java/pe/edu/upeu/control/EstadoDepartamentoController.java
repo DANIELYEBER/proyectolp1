@@ -4,12 +4,12 @@
  * and open the template in the editor.
  */
 
-package pe.edu.upeu.servicio;
+package pe.edu.upeu.control;
 
 /**
  *
  * @author USERS
  */
-public interface EstadoDepartServicioInterface {
+public class EstadoDepartamentoController {
     
 }

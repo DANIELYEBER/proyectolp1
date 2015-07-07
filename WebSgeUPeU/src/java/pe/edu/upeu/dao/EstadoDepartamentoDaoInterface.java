@@ -7,19 +7,17 @@
 package pe.edu.upeu.dao;
 
 import java.util.List;
-import pe.edu.upeu.modelo.GloEstadoArea;
+import pe.edu.upeu.modelo.GloEstadoDepartamento;
 import syscenterlife.dmp.core.data.IDataAccess;
 
 /**
  *
  * @author USERS
  */
-public interface EstadoAreaDaoInterface extends IDataAccess<GloEstadoArea>{
+public interface EstadoDepartamentoDaoInterface extends IDataAccess<GloEstadoDepartamento>{
 
-    public void save(EstadoAreaDaoInterface estadoAreaDao);
+    public void update(EstadoDepartamentoDaoInterface estadoDepartamentoDao);
 
-    public void update(EstadoAreaDaoInterface estadoAreaDao);
-
-    public List<GloEstadoArea> buscarEstadoArea(String EstadoArea);
+    public List<GloEstadoDepartamento> buscarEstadoDepartamento(String EstadoDepartamento);
     
 }

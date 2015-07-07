@@ -6,13 +6,15 @@
 
 package pe.edu.upeu.dao;
 
+import org.springframework.stereotype.Repository;
 import pe.edu.upeu.modelo.GloEstadoDepartamento;
-import syscenterlife.dmp.core.data.IDataAccess;
+import syscenterlife.dmp.core.data.DataAccess;
 
 /**
  *
  * @author USERS
  */
-public interface EstadoDepartDaoInterface extends IDataAccess<GloEstadoDepartamento>{
+@Repository("EstadoDepartDao")
+public class EstadoDepartamentoDaoImpl extends DataAccess<GloEstadoDepartamento> implements EstadoDepartamentoDaoInterface{
     
 }
