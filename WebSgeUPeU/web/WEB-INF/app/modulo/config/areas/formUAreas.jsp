@@ -19,6 +19,12 @@
             <fm:form modelAttribute="ModeloAreas" method="post" action="${updateAreas}">
                 <table>
                     
+                    
+                    
+                    
+                    
+                    
+                    
                     <tr>
                         <td><fm:label path="nombre">Nombre</fm:label> </td>
                         <td><fm:input path="nombre" size="60" /></td>

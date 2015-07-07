@@ -14,6 +14,9 @@
     </head>
     <body>
         
+        
+        
+        
         <c:out value="${saludo}"/>
         
         <h1>Administracion de Areas!</h1>
