@@ -15,8 +15,8 @@
     <body>
         <div>
 <!--            `id_areas``nombre``descripcion``codigo`-->
-            <c:url var="saveperiodox"  value="actualizarAreaupeu" />
-            <fm:form modelAttribute="ModeloArea" method="post" action="${saveperiodox}">
+            <c:url var="updateAreas"  value="actualizarArea.upeu" />
+            <fm:form modelAttribute="ModeloAreas" method="post" action="${updateAreas}">
                 <table>
                     <tr>
                         <td><fm:label path="id_areas">id Area</fm:label> </td>

@@ -77,7 +77,7 @@ public ModelAndView guardarAreasXX(@ModelAttribute("modeloAreas") GloAreas areas
     System.out.println("holass:"+areas.getIdAreas());
         
         AreasServicio.saveAreas(areas);
-    return new ModelAndView(new RedirectView("periodo.upeu"));
+    return new ModelAndView(new RedirectView("Areas.upeu"));
 }
 
 @RequestMapping(value = "modificarAreas", method = RequestMethod.GET)

@@ -43,7 +43,7 @@
         <c:if test="${!empty ListaAreas}">
             <table >
                 <tr>
-                    <th>id_areas</th>
+                    
                     <th>nombre</th>
                     <th>descripcion</th>
                     <th>codigo</th>
@@ -53,7 +53,7 @@
                 
                 <c:forEach items="${ListaAreas}" var= "dato">   
                 <tr>
-                    <td><c:out value="${dato.id_areas}"/></td>
+                    
                     <td><c:out value="${dato.nombre}"/></td>
                     <td><c:out value="${dato.descripcion}"/></td>
                     <td><c:out value="${dato.codigo}"/></td>

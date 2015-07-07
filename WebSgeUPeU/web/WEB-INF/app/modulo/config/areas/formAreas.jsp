@@ -15,8 +15,8 @@
     <body>
         <div>
 <!--            `id_areas``nombre``descripcion``codigo`-->
-            <c:url var="saveperiodox"  value="actualizarAreaupeu" />
-            <fm:form modelAttribute="ModeloArea" method="post" action="${saveperiodox}">
+            <c:url var="saveperiodox"  value="guardarAreas.upeu" />
+            <fm:form modelAttribute="modeloAreas" method="post" action="${saveperiodox}">
                 <table>
                     <tr>
                         <td><fm:label path="id_areas">id Area</fm:label> </td>
@@ -38,7 +38,7 @@
                     <tr>        
                         
                         <td colspan="2">
-                        <fm:hidden path="idPeriodo" />
+                        <fm:hidden path="idAreas" />
                             <input type="submit" value="Guardar" >
                         </td>
                     </tr>
