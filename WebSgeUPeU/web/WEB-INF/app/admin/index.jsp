@@ -30,10 +30,10 @@
                                 <form class="clearfix" action="main.upeu" method="post">
 					<h1>Ingresar al Sistema</h1>
 					<label class="grey" for="log">Usuario:</label>
-					<input class="field" type="text" name="username" id="username" value="" size="23" />
-					<label class="grey" for="pwd">Clave:</label>
-					<input class="field" type="password" name="password" id="password" size="23" />	            	        			
-					<input type="submit" name="submit" value="Login" class="bt_register" />
+                                        <input class="field" type="text" name="usuario1" id="username" value="" size="23"  required="required"/>
+                                        <label class="grey" for="pwd">Clave:</label>
+                                        <input class="field" type="password" name="password" id="password" size="23" accept="required"/>	            	        			
+                                        <input type="submit" name="submit" value="Login" class="bt_register" />
 					
 				</form>
 			</div>
