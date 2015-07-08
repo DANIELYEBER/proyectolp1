@@ -16,8 +16,8 @@
         
         <c:out value="${saludo}"/>
         
-        <h1>Administracion de Estado Departamento!</h1>
-        <a href="EstadoDepartamento.upeu">Regresar inicio</a> &emsp14;
+        <h1>Administracion de EstadoDepartamento!</h1>
+        <a href="dmp1.upeu">Regresar inicio</a> &emsp14;
         <a href="formEstadoDepartamento.upeu">Crear Estado.Dpto</a>
         
         
@@ -29,7 +29,7 @@
         <tr align="center">
         &nbsp;&nbsp;
         <td  style="color:black">
-        Estado Departamento <input type="text" class="myinput" id="EstadoDepartamento" size="50" name="EstadoDepartamento"  value="">
+        Periodo <input type="text" class="myinput" id="periodo" size="50" name="EstadoDepartamento"  value="">
         
         <input  type="submit"  class="button2" value="Buscar" >&nbsp;
         </td>
@@ -42,25 +42,24 @@
         <c:if test="${!empty ListaEstadoDepartamento}">
             <table >
                 <tr>
-                    <th>idDepartamentoFilial</th>
-                    <th>idPeriodo</th>
-                    <th>EstadoMeta</th>
-                    <th>EstadoAvance</th>
-                    <th>EstadoPoa</th>
-                    <th>EstadoPm</th>               
+                    <th>estadometa</th>
+                    <th>estadoavance</th>
+                    <th>estadopoa</th>
+                    <th>estadopm</th>
+                    <th>DepartamentoFilial</th>
+                    <th>Periodo</th>
                     <th>Opciones</th>
                     
                 </tr>
                 
                 <c:forEach items="${ListaEstadoDepartamento}" var= "dato">   
                 <tr>
-                    
-                    <td><c:out value="${dato.idDepartamentoFilial.idDepartamentoFilial}"/></td>
+                    <td><c:out value="${dato.estadometa}"/></td>
+                    <td><c:out value="${dato.estadoavance}"/></td>
+                    <td><c:out value="${dato.estadopoa}"/></td>
+                    <td><c:out value="${dato.estadopm}"/></td>
+                    <td><c:out value="${dato.idDepartamentoFilial.descripcion}"/></td>
                     <td><c:out value="${dato.idPeriodo.descripcion}"/></td>
-                    <td><c:out value="${dato.EstadoMeta}"/></td>
-                    <td><c:out value="${dato.EstadoAvance}"/></td>
-                    <td><c:out value="${dato.EstadoPoa}"/></td>
-                    <td><c:out value="${dato.EstadoPm}"/></td>
                     
                     <td></td>
                     <td>
