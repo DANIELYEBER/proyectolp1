@@ -5,13 +5,13 @@
 */
 body{
 	font: 1em "Trebuchet MS", Verdana, Helvetica, sans-serif; text-align: center;
-	color: #666;
+	color: #FF9900;
 	color: #2F414C;
 	margin: 0px;
 	padding: 0px;
 	/*background-image: url(../../resource/img/bg.png);*/
 	/* background-attachment: fixed;*/
-        background-color: greenyellow;
+        background-color: aqua;
         
 }
 
