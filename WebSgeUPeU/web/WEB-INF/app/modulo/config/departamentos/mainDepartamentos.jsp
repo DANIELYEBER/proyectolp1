@@ -50,8 +50,10 @@
                     <th>nombre</th>
                     <th>descripcion</th>
                     <th>codigo</th>
-                    <th>opciones</th>
-
-                    
-                </tr>
+                    <th>opciones</th></tr>
+                </table>
+            </body>
+            
+    </c:if>
+            </html>
        
