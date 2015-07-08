@@ -45,20 +45,26 @@
                     <th>EstadoMeta</th>
                     <th>EstadoAvance</th>
                     <th>EstadoPoa</th>
+                    <th>EstadoPm</th>
+                    <th>idDepartArea</th>
+                    <th>idPeriodo</th>
                     <th>Opciones</th>
                     
                 </tr>
                 
                 <c:forEach items="${ListaEstadoArea}" var= "dato">   
                 <tr>
-                    <td><c:out value="${dato.EstadoArea}"/></td>
-                    <td><c:out value="${dato.EsadoAvance.descripcion}"/></td>
-                    <td><c:out value="${dato.idEstadoArea.codigo}"/></td>
+                    <td><c:out value="${dato.estadometa}"/></td>
+                    <td><c:out value="${dato.estadoAavance}"/></td>
+                    <td><c:out value="${dato.estadopoa}"/></td>
+                    <td><c:out value="${dato.estadopm}"/></td>
+                    <td><c:out value="${dato.idDepartArea.idAreas}"/></td>
+                    <td><c:out value="${dato.idPeriodo.descripcion}"/></td>
                    
                     <td></td>
                     <td>
-                        <a href="eliminarEsstadopArea.upeu?iddepartAreax=${dato.iddepartAreax}">Eliminar</a>&emsp14;
-                        <a href=EstadoepartAreaX.upeu?idDepartArea=${dato.idDepartArea}">Modificar</a>
+                        <a href="eliminarEstadoArea.upeu?idEstadoAreax=${dato.idEstadoAreax}">Eliminar</a>&emsp14;
+                        <a href="modificarEstadoAreaX.upeu?idEstadoArea=${dato.idEstadoArea}">Modificar</a>
                     </td>
                     
                 </tr>
