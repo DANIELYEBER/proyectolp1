@@ -53,8 +53,6 @@
                             
                         </td>
                     </tr>                    
-                   
-                    
                     <tr>                        
                         <td colspan="2">
                         <fm:hidden path="idEstadoArea" />

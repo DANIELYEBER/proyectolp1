@@ -69,7 +69,7 @@
                 </c:forEach>
             </table>
             
-            Holasss
+             Hola Grupo N° 01
         </c:if>
         
     </body>

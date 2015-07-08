@@ -39,7 +39,7 @@
         </table>
         </form>
         </div> 
-        <!--            `id_areas``nombre``descripcion``codigo`-->
+   
         
         <c:if test="${!empty ListaDepartamentos}">
             <table >
@@ -67,7 +67,7 @@
                 </tr>
                 </c:forEach>
             </table>
-            holass mundo
+          Hola Grupo N° 01
         </c:if>
         
     </body>
