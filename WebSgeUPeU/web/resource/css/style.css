@@ -15,14 +15,18 @@
         
 }*/
 
-    body{               
-    background:url("resource/imagenes/cris.jpg") repeat-x;            
-    padding: 2px;
-    border-spacing: 4px;
-    font-family: Verdana, Geneva, sans-serif;            
-    text-align: center;
-    
-    }
+ body{
+	font: 1em "Trebuchet MS", Verdana, Helvetica, sans-serif; text-align: center;
+	color: darkgreen;
+	color: blue;
+	margin: 2px;
+	padding: 4px;
+	background-image: url(../../resource/img/cris.png);
+	 background-attachment: fixed;
+        background-size: 100%;
+        
+}
+
     
 
 div{
