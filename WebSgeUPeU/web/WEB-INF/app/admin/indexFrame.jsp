@@ -262,8 +262,9 @@
                   <li class="active"><a href="periodo.upeu" target="home"><i class="fa fa-circle-o"></i>Adm. Periodo</a></li>
                   <li><a href="index2.html"><i class="fa fa-circle-o"></i> Adm. Temporada</a></li>
                   <li class="active"><a href="areas.upeu" target="home"><i class="fa fa-circle-o"></i>Glo. Areas</a></li>
-                  <li class="active"><a href="DepartArea.upeu" target="home"><i class="fa fa-circle-o"></i>Glo. DepartArea</a></li>
+                  <li class="active"><a href="departArea.upeu" target="home"><i class="fa fa-circle-o"></i>Glo. DepartArea</a></li>
                   <li class="active"><a href="departamentos.upeu" target="home"><i class="fa fa-circle-o"></i>Glo. Departamentos</a></li>
+                  <li class="active"><a href="EstadoArea.upeu" target="home"><i class="fa fa-circle-o"></i>Glo. EstadoArea</a></li>
                   <li class="active"><a href="EstadoDepartamento.upeu" target="home"><i class="fa fa-circle-o"></i>Glo. EstadoDpto</a></li>
               </ul>
             </li>
