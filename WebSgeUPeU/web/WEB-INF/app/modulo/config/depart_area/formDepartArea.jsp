@@ -18,20 +18,25 @@
             <c:url var="saveDepartArea"  value="guardarDepartArea.upeu" />
             <fm:form modelAttribute="modeloDepartArea" method="post" action="${saveDepartArea}">
                 <table>
-                                        
-                    <tr>
-                        <td><fm:label path="idAreas.idAreas">Nombre</fm:label> </td>
-                        <td><fm:input path="id.Areas.idAreas" size="60" /></td>
+                      <tr>
+                        <td><fm:label path="idAreas.idAreas">Areas</fm:label> </td>
+                        <td>
+                        <fm:select path="idAreas.idAreas">
+                            <fm:options items="${listaAreasX}" itemLabel="nombre" itemValue="idAreas" />
+                        </fm:select>
+                            
+                        </td>
                     </tr>
                     <tr>
-                        <td><fm:label path="idAreas.idAreas">Descripci&oacute;n</fm:label> </td>
-                        <td><fm:input path="idAreas.idAreas" size="60" /></td>
-                    </tr>
-                    <tr>
-                        <td><fm:label path="idAreas.idAreas">Codigo</fm:label> </td>
-                        <td><fm:input path="idAreas.idAreas" size="60" /></td>
-                    </tr>
-
+                        <td><fm:label path="idDepartamentoFilial.idDepartamentoFilial">DepartamentoFilial</fm:label> </td>
+                        <td>
+                        <fm:select path="idDepartamentoFilial.idDepartamentoFilial">
+                            <fm:options items="${listaDepartamentoFilialX}" itemLabel="idDepartamento" itemValue="idDepartamentoFilial" />
+                        </fm:select>
+                            
+                        </td>
+                    </tr>                  
+                    
                     <tr>        
                                                
                         <td colspan="2">

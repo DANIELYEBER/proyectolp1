@@ -42,18 +42,17 @@
         <c:if test="${!empty ListaDepartArea}">
             <table >
                 <tr>
-                    <th>Nombre</th>
-                    <th>Descripcion</th>
-                    <th>Codigo</th>
-                    <th>Opciones</th>
+                    <th>idAreas</th>
+                    <th>idDepartamentoFilial</th>
+                    
                     
                 </tr>
                 
                 <c:forEach items="${ListaDepartArea}" var= "dato">   
                 <tr>
                     <td><c:out value="${dato.idAreas.nombre}"/></td>
-                    <td><c:out value="${dato.idAreas.descripcion}"/></td>
-                    <td><c:out value="${dato.idAreas.codigo}"/></td>
+                    <td><c:out value="${dato.idDepartamentoFilial.idDepartamento}"/></td>
+                    
                    
                     <td></td>
                     <td>
