@@ -60,7 +60,7 @@
                     <td><c:out value="${dato.descripcion}"/></td>
                     <td><c:out value="${dato.codigo}"/></td>
                     <td>
-                        <a href="eliminardepartamentos.upeu?iddepartamentox=${dato.iddepartamentos}">Eliminar</a>&emsp14;
+                        <a href="eliminardepartamentos.upeu?idDepartamentox=${dato.idDepartamento}">Eliminar</a>&emsp14;
                         <a href="modificarDepartamentosX.upeu?idDepartamento=${dato.idDepartamentos}">Modificar</a>
                     </td>
                     

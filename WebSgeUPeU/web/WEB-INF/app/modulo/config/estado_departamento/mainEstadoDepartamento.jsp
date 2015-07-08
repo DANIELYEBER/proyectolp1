@@ -58,13 +58,13 @@
                     <td><c:out value="${dato.estadoavance}"/></td>
                     <td><c:out value="${dato.estadopoa}"/></td>
                     <td><c:out value="${dato.estadopm}"/></td>
-                    <td><c:out value="${dato.idDepartamentoFilial.descripcion}"/></td>
+                    <td><c:out value="${dato.idDepartamentoFilial.idDepartamento}"/></td>
                     <td><c:out value="${dato.idPeriodo.descripcion}"/></td>
                     
                     <td></td>
                     <td>
-                        <a href="eliminarEstadoDepart.upeu?idEstadoDepartamentox=${dato.idEstadoDepartamento}">Eliminar</a>&emsp14;
-                        <a href="modificarEstadoDepartamentoX.upeu?idEstadoDepartamento=${dato.idEstadoDepartamento}">Modificar</a>
+                        <a href="eliminarEstadoDepart.upeu?idEstadodepartamentox=${dato.idEstadodepartamento}">Eliminar</a>&emsp14;
+                        <a href="modificarEstadoDepartamentoX.upeu?idEstadodepartamento=${dato.idEstadodepartamento}">Modificar</a>
                     </td>
                     
                 </tr>
