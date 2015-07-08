@@ -67,8 +67,7 @@
                 </tr>
                 </c:forEach>
             </table>
-            
-            Holasss
+            holass mundo
         </c:if>
         
     </body>

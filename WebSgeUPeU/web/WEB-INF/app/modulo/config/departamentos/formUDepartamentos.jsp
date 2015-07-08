@@ -22,6 +22,7 @@
                     <tr>
                         <td><fm:label path="nombre">Nombre</fm:label> </td>
                         <td><fm:input path="nombre" size="60" /></td>
+                        
                     </tr>
                     <tr>
                         <td><fm:label path="descripcion">Descripci&oacute;n</fm:label> </td>
