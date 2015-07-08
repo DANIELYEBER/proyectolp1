@@ -14,28 +14,27 @@
     </head>
     <body>
         <div>
-<!--            ``id_depart_area``id_areas``id_departamento_filial`
-            <c:url var="updatedepartarea"  value="actualizardepartarea.upeu" />
-            <fm:form modelAttribute="Modelodepartarea" method="post" action="${updateAreas}">
+<!--            `id_areas``nombre``descripcion``codigo`-->
+            <c:url var="updateDepartArea"  value="actualizarDepartArea.upeu" />
+            <fm:form modelAttribute="ModeloDepartArea" method="post" action="${updateDepartArea}">
                 <table>
+                 <tr>
+                        <td><fm:label path="idAreas.idAreas">Nombre</fm:label> </td>
+                        <td><fm:input path="id.Areas.idAreas" size="60" /></td>
+                    </tr>
+                    <tr>
+                        <td><fm:label path="idAreas.idAreas">Descripci&oacute;n</fm:label> </td>
+                        <td><fm:input path="idAreas.idAreas" size="60" /></td>
+                    </tr>
+                    <tr>
+                        <td><fm:label path="idAreas.idAreas">Codigo</fm:label> </td>
+                        <td><fm:input path="idAreas.idAreas" size="60" /></td>
+                    </tr>
 
-                    <tr>
-                        <td><fm:label path="id_depart_area">Nombre</fm:label> </td>
-                        <td><fm:input path="id_depart_area" size="60" /></td>
-                    </tr>
-                    <tr>
-                        <td><fm:label path="id_areas">Descripci&oacute;n</fm:label> </td>
-                        <td><fm:input path="id_areas" size="60" /></td>
-                    </tr>
-                    <tr>
-                        <td><fm:label path="id_departamento_filial">Codigo</fm:label> </td>
-                        <td><fm:input path="id_departamento_filial" size="60" /></td>
-                    </tr>
-
-                    <tr>        
+                    <tr>       
                         
                         <td colspan="2">
-                        <fm:hidden path="idAreas" />
+                        <fm:hidden path="idDepartArea" />
                             <input type="submit" value="Guardar" >
                         </td>
                     </tr>

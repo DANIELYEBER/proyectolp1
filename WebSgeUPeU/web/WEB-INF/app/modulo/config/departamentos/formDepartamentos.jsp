@@ -16,8 +16,8 @@
     <body>
         <div>
 <!--            `id_areas``nombre``descripcion``codigo`-->
-            <c:url var="saveDepartamentosx"  value="guardarDepartamentos.upeu" />
-            <fm:form modelAttribute="modeloDepartamentos" method="post" action="${saveDepartamentosx}">
+            <c:url var="saveDepartamentos"  value="guardarDepartamentos.upeu" />
+            <fm:form modelAttribute="modeloDepartamentos" method="post" action="${saveDepartamentos}">
                 <table>
                    
                     <tr>
@@ -34,7 +34,14 @@
                     </tr>
 
                     <tr>        
-                     <td colspan="2"><input type="submit" value="Enviar" > </td>
+                        
+                        
+                        
+                        
+                        <td colspan="2">
+                        <fm:hidden path="idDepartamento" />
+                            <input type="submit" value="Guardar" >
+                        </td>
                     </tr>
                 </table>                
             </fm:form>         
