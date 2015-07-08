@@ -15,8 +15,6 @@
     <body>
         
         
-        
-        
         <c:out value="${saludo}"/>
         
         <h1>Administracion de Departamentos</h1>

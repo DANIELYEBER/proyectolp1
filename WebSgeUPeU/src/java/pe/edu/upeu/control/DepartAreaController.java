@@ -102,7 +102,7 @@ public String modificarDepartAreaX(HttpServletRequest r, Model model ){
 @RequestMapping(value = "actualizarDepartArea", method = RequestMethod.POST)
 public ModelAndView gactualizarDepartAreaXX(@ModelAttribute("ModeloDepartArea") GloDepartArea departArea,
                                       BindingResult result ){
-    System.out.println("holass:"+departArea.getIdAreas()+departArea.getIdDepartamentoFilial());
+    System.out.println("hola cristian:"+departArea.getIdAreas()+departArea.getIdDepartamentoFilial());
        // periodo.setFechaInicio(new Date());
        // periodo.setFechaFin(new Date());
         DepartAreaServicio.updateDepartArea(departArea);

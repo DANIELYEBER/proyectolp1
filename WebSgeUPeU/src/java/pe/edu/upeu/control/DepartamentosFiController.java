@@ -27,8 +27,7 @@ import pe.edu.upeu.servicio.DepartamentosServicioInterface;
 
 
 /**
- *
- * @author USERS
+
  */
 @Controller
 public class DepartamentosFiController {
@@ -122,6 +121,5 @@ public  ModelAndView buscarDepartamentosFi(HttpServletRequest r) {
     
    return new ModelAndView("modulo/config/departamentosfilial/mainDepartamentosFilial",modelo);
 }
-
     
 }
