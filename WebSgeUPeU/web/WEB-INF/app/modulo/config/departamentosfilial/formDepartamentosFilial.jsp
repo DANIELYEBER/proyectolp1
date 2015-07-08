@@ -22,7 +22,7 @@
                         <td><fm:label path="idFilial.idFilial">Filiales</fm:label> </td>
                         <td>
                         <fm:select path="idFilial.idFilial">
-                            <fm:options items="${listaDepartamentosFiX}" itemLabel="descripcion" itemValue="idDepartamentoFilial" />
+                            <fm:options items="${listaDepartamentosFiX}"itemLabel="descripcion" itemValue="idDepartamentoFilial" />
                         </fm:select>
                             
                         </td>

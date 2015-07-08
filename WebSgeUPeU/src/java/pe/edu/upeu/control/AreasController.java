@@ -115,6 +115,7 @@ public  ModelAndView buscarAreas(HttpServletRequest r) {
     List<GloAreas> lista=AreasServicio.buscarAreas(areas);
     System.out.println(areas+"Holasssssssssssssss:"+lista.size());
     Map<String, Object> modelo=new HashMap<String, Object> ();
+    
     modelo.put("ListaAreas", lista);
     
    return new ModelAndView("modulo/config/areas/mainAreas",modelo);
