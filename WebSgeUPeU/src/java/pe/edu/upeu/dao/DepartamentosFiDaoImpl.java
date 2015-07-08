@@ -13,10 +13,7 @@ import org.springframework.stereotype.Repository;
 import pe.edu.upeu.modelo.GloDepartamentosFilial;
 import syscenterlife.dmp.core.data.DataAccess;
 
-/**
- *
- * @author USERS
- */
+
 @Repository("DepartamentoFiDao")
 public class DepartamentosFiDaoImpl extends DataAccess<GloDepartamentosFilial> implements DepartamentosFiDaoInterface{
     

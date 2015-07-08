@@ -57,7 +57,7 @@ public  ModelAndView eliminarDepartamentosFi(HttpServletRequest r) {
     DepartamentosFiServicio.deleteDepartamentosFi(idDepartamentoFi);
     System.out.println("si llego al metodo");
     
-    return new ModelAndView(new RedirectView("departamentosFi.upeu"));
+    return new ModelAndView(new RedirectView("DepartamentosFi.upeu"));
 }
 
 
@@ -79,7 +79,7 @@ public ModelAndView guardarDepartamentosFiXX(@ModelAttribute("modeloDepartamento
     System.out.println("holass:"+departamentosFilial.getIdDepartamento());
         
         DepartamentosFiServicio.saveDepartamentosFi(departamentosFilial);
-    return new ModelAndView(new RedirectView("departamentosfi.upeu"));
+    return new ModelAndView(new RedirectView("DepartamentosFi.upeu"));
 }
 
 @RequestMapping(value = "modificarDepartamenosFi", method = RequestMethod.GET)

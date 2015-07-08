@@ -23,7 +23,7 @@
         
         <div id="idFormulario" align="center">
             
-        <form  id="formBuscar" action="buscarEstadoArea.upeu"  method="post" name="formBuscar" >
+        <form  id="formBuscar" action="buscarEstadoAreax.upeu"  method="post" name="formBuscar" >
         <table align="center"  class="myform">
         
         <tr align="center">
