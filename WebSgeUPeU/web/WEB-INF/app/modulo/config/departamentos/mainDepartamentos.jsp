@@ -24,14 +24,14 @@
         
         <div id="idFormulario" align="center">
             
-        <form  id="formBuscar" action="buscarDepartamento.upeu"  method="post" name="formBuscar" >
+        <form  id="formBuscar" action="buscarDepartamentosx.upeu"  method="post" name="formBuscar" >
         <table align="center"  class="myform">
         
         <tr align="center">
         &nbsp;&nbsp;
         <td  style="color:black">
             
-        Areas <input type="text" class="myinput" id="departamentos" size="50" name="departamentos"  value="">
+        Departamentos <input type="text" class="myinput" id="departamentos" size="50" name="departamentos"  value="">
         
         <input  type="submit"  class="button2" value="Buscar" >&nbsp;
         </td>
@@ -49,7 +49,7 @@
                     <th>descripcion</th>
                     <th>codigo</th>
                     <th>opciones</th>
-
+                    
                     
                 </tr>
                 
@@ -60,8 +60,8 @@
                     <td><c:out value="${dato.descripcion}"/></td>
                     <td><c:out value="${dato.codigo}"/></td>
                     <td>
-                        <a href="eliminardepartamentos.upeu?idareasx=${dato.idAreas}">Eliminar</a>&emsp14;
-                        <a href="modificarDepartamentosX.upeu?idAreas=${dato.idAreas}">Modificar</a>
+                        <a href="eliminardepartamentos.upeu?idareasx=${dato.idDepartamentos}">Eliminar</a>&emsp14;
+                        <a href="modificarDepartamentosX.upeu?idAreas=${dato.idDepartamentos}">Modificar</a>
                     </td>
                     
                 </tr>

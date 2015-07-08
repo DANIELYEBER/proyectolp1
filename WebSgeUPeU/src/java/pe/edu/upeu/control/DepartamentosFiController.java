@@ -39,7 +39,7 @@ public class DepartamentosFiController {
    @Autowired
    DepartamentosServicioInterface DepartamentosServicio;
    
-@RequestMapping(value = "departamentosfi", method = RequestMethod.GET)   
+@RequestMapping(value = "departamentosFi", method = RequestMethod.GET)   
 public ModelAndView inicioDepartamentosFi(){
     List<GloDepartamentosFilial> lista=DepartamentosFiServicio.listarDepartamentosFi();
     
@@ -57,11 +57,11 @@ public  ModelAndView eliminarDepartamentosFi(HttpServletRequest r) {
     DepartamentosFiServicio.deleteDepartamentosFi(idDepartamentoFi);
     System.out.println("si llego al metodo");
     
-    return new ModelAndView(new RedirectView("departamentosfi.upeu"));
+    return new ModelAndView(new RedirectView("departamentosFi.upeu"));
 }
 
 
-@RequestMapping(value = "formDepartamentosFi", method = RequestMethod.GET)
+@RequestMapping(value = "formDepartamentosfi", method = RequestMethod.GET)
 public ModelAndView irFormulario(@ModelAttribute("modeloDepartamentosFi") GloDepartamentosFilial departamentosFilial,BindingResult result ){
     Map<String, Object> modelo=new HashMap<String, Object> ();
     modelo.put("listaTemporada", "Holasssssssssss");
