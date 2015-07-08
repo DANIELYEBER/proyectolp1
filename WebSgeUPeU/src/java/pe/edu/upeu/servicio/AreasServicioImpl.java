@@ -1,8 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
+
+
 
 package pe.edu.upeu.servicio;
 
@@ -14,10 +12,6 @@ import org.springframework.transaction.annotation.Transactional;
 import pe.edu.upeu.dao.AreasDaoInterface;
 import pe.edu.upeu.modelo.GloAreas;
 
-/**
- *
- * @author USERS
- */
 @Service(value = "AreasServicio")
 @Transactional(propagation = Propagation.SUPPORTS, readOnly = true)
 public class AreasServicioImpl implements AreasServicioInterface{
@@ -54,7 +48,6 @@ public class AreasServicioImpl implements AreasServicioInterface{
        return areasDao.buscarAreas(areas);
    }
 
-    
 }
 
     
