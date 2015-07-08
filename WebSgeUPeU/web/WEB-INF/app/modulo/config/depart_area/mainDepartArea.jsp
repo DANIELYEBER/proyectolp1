@@ -1,8 +1,4 @@
-<%-- 
-    Document   : mainDepartAreas
-    Created on : 05/07/2015, 12:25:02 PM
-    Author     : USERS
---%>
+
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
@@ -19,8 +15,7 @@
         <h1>Administracion de DepartArea!</h1>
         <a href="dmp1.upeu">Regresar inicio</a> &emsp14;
         <a href="formDepartArea.upeu">Crear DepartArea</a>
-        
-        
+
         <div id="idFormulario" align="center">
             
         <form  id="formBuscar" action="buscarDepartAreax.upeu"  method="post" name="formBuscar" >
@@ -37,23 +32,20 @@
         </table>
         </form>
         </div> 
-        
-        
+ 
         <c:if test="${!empty ListaDepartArea}">
             <table >
                 <tr>
                     <th>idAreas</th>
                     <th>idDepartamentoFilial</th>
-                    
-                    
+
                 </tr>
                 
                 <c:forEach items="${ListaDepartArea}" var= "dato">   
                 <tr>
                     <td><c:out value="${dato.idAreas.nombre}"/></td>
                     <td><c:out value="${dato.idDepartamentoFilial.idDepartamento}"/></td>
-                    
-                   
+
                     <td></td>
                     <td>
                         <a href="eliminarDepartArea.upeu?iddepartAreax=${dato.idDepartArea}">Eliminar</a>&emsp14;

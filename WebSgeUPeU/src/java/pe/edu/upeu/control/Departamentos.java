@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
 package pe.edu.upeu.control;
 
@@ -22,10 +17,6 @@ import org.springframework.web.servlet.view.RedirectView;
 import pe.edu.upeu.modelo.GloDepartamentos;
 import pe.edu.upeu.servicio.DepartamentosServicioInterface;
 
-/**
- *
- * @author USERS
- */
 @Controller
 public class Departamentos {
      
@@ -93,7 +84,9 @@ public String modificarDepartamentosX(HttpServletRequest r, Model model ){
        
     return "modulo/config/departamentos/formUDepartamentos";
 }
-  
+ 
+
+ 
 @RequestMapping(value = "actualizarDepartamentos", method = RequestMethod.POST)
 public ModelAndView actualizarDepartamentosXX(@ModelAttribute("ModeloDepartamentos") GloDepartamentos departamentos,
                                       BindingResult result ){
@@ -115,7 +108,6 @@ public  ModelAndView buscarDepartamento(HttpServletRequest r) {
     
    return new ModelAndView("modulo/config/departamentos/mainDepartamentos",modelo);
 }
-
 
 }
     

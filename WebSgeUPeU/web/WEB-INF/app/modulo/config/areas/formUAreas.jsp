@@ -1,8 +1,4 @@
-<%-- 
-    Document   : formUAreas
-    Created on : 06/07/2015, 06:23:44 PM
-    Author     : USERS
---%>
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@taglib prefix="fm" uri="http://www.springframework.org/tags/form" %>
@@ -18,13 +14,7 @@
             <c:url var="updateAreas"  value="actualizarAreas.upeu" />
             <fm:form modelAttribute="ModeloAreas" method="post" action="${updateAreas}">
                 <table>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
+
                     <tr>
                         <td><fm:label path="nombre">Nombre</fm:label> </td>
                         <td><fm:input path="nombre" size="60" /></td>

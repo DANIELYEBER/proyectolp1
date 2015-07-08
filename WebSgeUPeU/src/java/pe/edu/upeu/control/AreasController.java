@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 
 package pe.edu.upeu.control;
 
@@ -19,15 +15,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.view.RedirectView;
-
 import pe.edu.upeu.modelo.GloAreas;
 import pe.edu.upeu.servicio.AreasServicioInterface;
 
 
-/**
- *
- * @author USERS
- */
 
   @Controller 
 public class AreasController {
@@ -70,7 +61,6 @@ public ModelAndView irFormulario(@ModelAttribute("modeloAreas") GloAreas areas,B
     return new ModelAndView("modulo/config/areas/formAreas",modelo);
 }
 
-
 @RequestMapping(value = "guardarAreas", method = RequestMethod.POST)
 public ModelAndView guardarAreasXX(@ModelAttribute("modeloAreas") GloAreas areas,
                                       BindingResult result ){
@@ -107,7 +97,6 @@ public ModelAndView actualizarAreasXX(@ModelAttribute("ModeloAreas") GloAreas ar
         AreasServicio.updateAreas(areas);
     return new ModelAndView(new RedirectView("areas.upeu"));
 }
-
 
 @RequestMapping(value = "buscarAreasX", method = RequestMethod.POST)
 public  ModelAndView buscarAreas(HttpServletRequest r) {

@@ -1,11 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
 package pe.edu.upeu.control;
-
 
 import java.util.HashMap;
 import java.util.List;
@@ -23,8 +17,6 @@ import org.springframework.web.servlet.view.RedirectView;
 import pe.edu.upeu.modelo.GloDepartArea;
 import pe.edu.upeu.servicio.AreasServicioInterface;
 import pe.edu.upeu.servicio.DepartAreaServicioInterface;
-
-
 
 @Controller 
 public class DepartAreaController {
@@ -57,7 +49,6 @@ public  ModelAndView eliminarDepartArea(HttpServletRequest r) {
     
     return new ModelAndView(new RedirectView("DepartArea.upeu"));
 }
-
 
 @RequestMapping(value = "formDepartArea", method = RequestMethod.GET)
 public ModelAndView irFormulario(@ModelAttribute("modeloDepartArea") GloDepartArea departArea,BindingResult result ){
