@@ -19,16 +19,6 @@ public interface EstadoDepartamentoDaoInterface extends IDataAccess<GloEstadoDep
 
     public List<GloEstadoDepartamento> buscarEstadoDepartamento(String EstadoDepartamento);
 
-    public List<GloEstadoDepartamento> getListAll();
-
-    public void save(GloEstadoDepartamento estadoDepartamento);
-
-    public void delete(int idEstadoDepartamento);
-
-    public void update(GloEstadoDepartamento estadoDepartamento);
-
-    public GloEstadoDepartamento getById(int idEstadoDepartamento);
-
     
     
 }
