@@ -58,7 +58,8 @@
 </div> <!--panel -->
     <div id="container">	
 		<div id="content" style="padding-top:100px;">
-			<h1>Bienvenidos al Sistema de Gestion Estratégica</h1>
+
+                             <MARQUEE SCROLLDELAY =200> <h1>Bienvenidos al Sistema de Gestion Estratégica</h1> </MARQUEE>
 		</div>		
 	</div>
 </body>
