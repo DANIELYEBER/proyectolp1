@@ -50,10 +50,28 @@
                     <th>nombre</th>
                     <th>descripcion</th>
                     <th>codigo</th>
-                    <th>opciones</th></tr>
-                </table>
-            </body>
+                    <th>opciones</th>
+
+                    
+                </tr>
+                
+                <c:forEach items="${ListaDepartamentos}" var= "dato">   
+                <tr>
+                    
+                    <td><c:out value="${dato.nombre}"/></td>
+                    <td><c:out value="${dato.descripcion}"/></td>
+                    <td><c:out value="${dato.codigo}"/></td>
+                    <td>
+                        <a href="eliminardepartamentos.upeu?idareasx=${dato.idAreas}">Eliminar</a>&emsp14;
+                        <a href="modificarDepartamentosX.upeu?idAreas=${dato.idAreas}">Modificar</a>
+                    </td>
+                    
+                </tr>
+                </c:forEach>
+            </table>
             
-    </c:if>
-            </html>
-       
+            Holasss
+        </c:if>
+        
+    </body>
+</html>
