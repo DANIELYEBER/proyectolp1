@@ -29,8 +29,8 @@
 				<!-- Login Form -->
                                 <form class="clearfix" action="main.upeu" method="post">
 					
-                                    <MARQUEE SCROLLDELAY =200> <h1>Ingresar al Sistema</h1> </MARQUEE>
-                            
+     
+                                     <h1>Ingresar al Sistema</h1>
 					<label class="grey" for="log">User Name:</label>
                                         <input class="field" type="text" name="usuario1" id="username" value="" size="23"  required="required"/>
                                         <label class="grey" for="pwd">Password:</label>
