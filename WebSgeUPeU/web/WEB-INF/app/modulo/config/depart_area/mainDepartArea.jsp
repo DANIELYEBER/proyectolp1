@@ -10,6 +10,9 @@
     </head>
     <body>
         
+        
+        
+ 
         <c:out value="${saludo}"/>
         
         <h1>Administracion de DepartArea!</h1>
@@ -36,6 +39,7 @@
         <c:if test="${!empty ListaDepartArea}">
             <table >
                 <tr>
+                    
                     <th>idAreas</th>
                     <th>idDepartamentoFilial</th>
 
