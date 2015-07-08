@@ -69,7 +69,7 @@ public ModelAndView guardarTipoAreasXX(@ModelAttribute("modeloTipoAreas") GloTip
         TipoAreasServicio.saveTipoAreas(tipoareas);
     return new ModelAndView(new RedirectView("tipoareas.upeu"));
 }
-@RequestMapping(value = "buscarFilialX", method = RequestMethod.POST)
+@RequestMapping(value = "buscarFilial", method = RequestMethod.POST)
 public  ModelAndView buscarTipoAreas(HttpServletRequest r) {
     String tipoareas=r.getParameter("TipoAreas")==null ? "":r.getParameter("TipoAreas");
     List<GloTipoarea> lista=TipoAreasServicio.buscarTipoAreas(tipoareas);
