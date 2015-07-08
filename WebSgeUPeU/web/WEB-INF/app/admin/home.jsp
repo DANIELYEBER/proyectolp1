@@ -11,8 +11,8 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
     </head>
-    <body background="(resource/imagenes/fondoo.jsp">
-        <h1>Bienvenidos Amigos!</h1>
+    <body background="(resource/imagenes/fondoo.jpg">
+        <h1>"Bienvenidos Amigos"</h1>
     </body>
 </html>
 
