@@ -39,7 +39,7 @@ public class DepartamentosFiController {
    @Autowired
    DepartamentosServicioInterface DepartamentosServicio;
    
-@RequestMapping(value = "departamentosFi", method = RequestMethod.GET)   
+@RequestMapping(value = "DepartamentosFi", method = RequestMethod.GET)   
 public ModelAndView inicioDepartamentosFi(){
     List<GloDepartamentosFilial> lista=DepartamentosFiServicio.listarDepartamentosFi();
     

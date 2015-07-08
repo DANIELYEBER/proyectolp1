@@ -33,7 +33,7 @@
         &nbsp;&nbsp;
         <td  style="color:black">
             
-        Areas <input type="text" class="myinput" id="area" size="50" name="area"  value="">
+        Areas <input type="text" class="myinput" id="departamentos" size="50" name="departamentos"  value="">
         
         <input  type="submit"  class="button2" value="Buscar" >&nbsp;
         </td>
@@ -43,7 +43,7 @@
         </div> 
         <!--            `id_areas``nombre``descripcion``codigo`-->
         
-        <c:if test="${!empty ListaDepartamentosFilial}">
+        <c:if test="${!empty ListaDepartamentosFi}">
             <table >
                 <tr>
                     
@@ -54,7 +54,7 @@
                     
                 </tr>
                 
-                <c:forEach items="${ListaDepartamentosFilial}" var= "dato">   
+                <c:forEach items="${ListaDepartamentosFi}" var= "dato">   
                 <tr>
                     
                     <td><c:out value="${dato.filial.nombre}"/></td>

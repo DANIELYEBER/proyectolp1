@@ -33,7 +33,7 @@ public class EstadoAreaController {
     EstadoAreaServicioInterface EstadoAreaServicio;
 
    
-    @RequestMapping(value = "estadoarea", method = RequestMethod.GET)   
+    @RequestMapping(value = "EstadoArea", method = RequestMethod.GET)   
 public ModelAndView inicioEstadoArea(){
     List<GloEstadoArea> lista=EstadoAreaServicio.listarEstadoArea();
     
@@ -51,7 +51,7 @@ public  ModelAndView eliminarEstadoArea(HttpServletRequest r) {
     EstadoAreaServicio.deleteEstadoArea(idestadoarea);
     System.out.println("si llego al metodo");
     
-    return new ModelAndView(new RedirectView("estadoarea.upeu"));
+    return new ModelAndView(new RedirectView("EstadoArea.upeu"));
 }
 
 
@@ -73,7 +73,7 @@ public ModelAndView guardarEstadoAreaXX(@ModelAttribute("modeloEstadoArea") GloE
     System.out.println("holass:"+estadoArea.getIdEstadoArea());
         
         EstadoAreaServicio.saveEstadoArea(estadoArea);
-    return new ModelAndView(new RedirectView("estadoarea.upeu"));
+    return new ModelAndView(new RedirectView("EstadoArea.upeu"));
 }
 
 @RequestMapping(value = "modificarEstadoArea", method = RequestMethod.GET)
@@ -101,7 +101,7 @@ public ModelAndView actualizarEstadoAreaXX(@ModelAttribute("ModeloEstadoArea") G
        // periodo.setFechaInicio(new Date());
        // periodo.setFechaFin(new Date());
         EstadoAreaServicio.updateEstadoArea(estadoArea);
-    return new ModelAndView(new RedirectView("estadoarea.upeu"));
+    return new ModelAndView(new RedirectView("EstadoArea.upeu"));
 }
 
 
@@ -113,7 +113,7 @@ public  ModelAndView buscarEstadoArea(HttpServletRequest r) {
     Map<String, Object> modelo=new HashMap<String, Object> ();
     modelo.put("ListaEstadoArea", lista);
     
-   return new ModelAndView("modulo/config/estado_area/mainEstadoAreas",modelo);
+   return new ModelAndView("modulo/config/estado_area/mainEstadoArea",modelo);
 }
 
 
