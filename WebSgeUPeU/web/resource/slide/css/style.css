@@ -16,12 +16,11 @@ html, body {border: 0; margin: 0; padding: 0;}
 
 body {
   	font: 85%/0.9 arial, helvetica, sans-serif;
-	background: #99A989 url(../../imagenes/img/playa.jpg) no-repeat;
-  	line-height: 500%;
-  	width: 550%;
+	background: #99A989 url(../../imagenes/img/fondo.jpg) no-repeat;
+  	line-height: 130%;
+  	width: 100%;
   	min-width: 970px;
-        color: blue
-  	
+  	color: black;
 }
 
 a {
