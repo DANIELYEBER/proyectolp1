@@ -24,7 +24,7 @@
         
         <div id="idFormulario" align="center">
             
-        <form  id="formBuscar" action="buscarDepartamento.upeu"  method="post" name="formBuscar" >
+        <form  id="formBuscar" action="buscarDepartamentox.upeu"  method="post" name="formBuscar" >
         <table align="center"  class="myform">
         
         <tr align="center">

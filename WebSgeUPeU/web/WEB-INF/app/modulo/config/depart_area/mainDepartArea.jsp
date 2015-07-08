@@ -27,7 +27,7 @@
         <tr align="center">
         &nbsp;&nbsp;
         <td  style="color:black">
-        DepartArea <input type="text" class="myinput" id="DepartArea" size="50" name="DepartArea"  value="">
+        DepartArea <input type="text" class="myinput" id="depart" size="50" name="depart"  value="">
         
         <input  type="submit"  class="button2" value="Buscar" >&nbsp;
         </td>
