@@ -18,6 +18,24 @@
             <c:url var="saveEstadoDepartamento"  value="guardarEstadoDepartamento.upeu" />
             <fm:form modelAttribute="modeloEstadoDepartamento" method="post" action="${saveEstadoDepartamento}">
                 <table>
+                    <tr>
+                        <td><fm:label path="idDepartamentoFilial.idDepartamentoFilial">DepartamentoFilial</fm:label> </td>
+                        <td>
+                        <fm:select path="idDepartamentoFilial.idDepartamentoFilial">
+                            <fm:options items="${listaDepartamentoFilialX}" itemLabel="descripcion" itemValue="idDepartamentoFilial" />
+                        </fm:select>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><fm:label path="idPeriodo.idPeriodo">Periodo</fm:label> </td>
+                        <td>
+                        <fm:select path="idPeriodo.idPeriodo">
+                            <fm:options items="${listaPeriodoX}" itemLabel="descripcion" itemValue="idPeriodo" />
+                        </fm:select>
+                            
+                        </td>
+                    </tr>
                    
                     <tr>
                         <td><fm:label path="estadometa">estadometa</fm:label> </td>
@@ -35,24 +53,8 @@
                         <td><fm:label path="estadopm">estadopm</fm:label> </td>
                         <td><fm:input path="estadopm" size="60" /></td>
                     </tr>
-                    <tr>
-                        <td><fm:label path="idPeriodo.idPeriodo">Periodo</fm:label> </td>
-                        <td>
-                        <fm:select path="idPeriodo.idPeriodo">
-                            <fm:options items="${listaPeriodoX}" itemLabel="descripcion" itemValue="idPeriodo" />
-                        </fm:select>
-                            
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><fm:label path="idDepartamentoFilial.idDepartamentoFilial">DepartamentoFilial</fm:label> </td>
-                        <td>
-                        <fm:select path="idDepartamentoFilial.idDepartamentoFilial">
-                            <fm:options items="${listaDepartamentoFilialX}" itemLabel="descripcion" itemValue="idDepartamentoFilial" />
-                        </fm:select>
-                            
-                        </td>
-                    </tr>
+                    
+                    
 
                     <tr>        
                         

@@ -42,27 +42,29 @@
         <c:if test="${!empty ListaEstadoDepartamento}">
             <table >
                 <tr>
+                    <th>idDepartamentoFilial</th>
+                    <th>idPeriodo</th>
                     <th>EstadoMeta</th>
                     <th>EstadoAvance</th>
                     <th>EstadoPoa</th>
-                    <th>EstadoPm</th>
-                    <th>idPeriodo</th>
-                    <th>idDepartamentoFilial</th>
+                    <th>EstadoPm</th>               
                     <th>Opciones</th>
                     
                 </tr>
                 
                 <c:forEach items="${ListaEstadoDepartamento}" var= "dato">   
                 <tr>
+                    
+                    <td><c:out value="${dato.idDepartamentoFilial.idDepartamentoFilial}"/></td>
+                    <td><c:out value="${dato.idPeriodo.descripcion}"/></td>
                     <td><c:out value="${dato.EstadoMeta}"/></td>
                     <td><c:out value="${dato.EstadoAvance}"/></td>
                     <td><c:out value="${dato.EstadoPoa}"/></td>
                     <td><c:out value="${dato.EstadoPm}"/></td>
-                    <td><c:out value="${dato.idPeriodo.descripcion}"/></td>
-                    <td><c:out value="${dato.idDepartamentoFilial.idDepartamentoFilial}"/></td>
+                    
                     <td></td>
                     <td>
-                        <a href="eliminarEstadoDepartamento.upeu?idEstadoDepartamentox=${dato.idEstadoDepartamento}">Eliminar</a>&emsp14;
+                        <a href="eliminarEstadoDepart.upeu?idEstadoDepartamentox=${dato.idEstadoDepartamento}">Eliminar</a>&emsp14;
                         <a href="modificarEstadoDepartamentoX.upeu?idEstadoDepartamento=${dato.idEstadoDepartamento}">Modificar</a>
                     </td>
                     
