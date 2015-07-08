@@ -3,17 +3,26 @@
 .:class
  :name
 */
-body{
+/*body{
 	font: 1em "Trebuchet MS", Verdana, Helvetica, sans-serif; text-align: center;
 	color: darkgreen;
 	color: blue;
 	margin: 0px;
 	padding: 0px;
 	/*background-image: url(../../resource/img/bg.png);*/
-	/* background-attachment: fixed;*/
+	/* background-attachment: fixed;
         background-color: aqua;
         
-}
+}*/
+
+    body{               
+    background:url("resource/imagenes/img/fondo.jpg") repeat-x;            
+    padding: 2px;
+    border-spacing: 4px;
+    font-family: Verdana, Geneva, sans-serif;            
+    text-align: center;
+    }
+    
 
 div{
 	-moz-border-radius: 4px;
