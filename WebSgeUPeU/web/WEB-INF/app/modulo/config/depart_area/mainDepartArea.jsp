@@ -56,7 +56,7 @@
                    
                     <td></td>
                     <td>
-                        <a href="eliminarDepartArea.upeu?iddepartAreax=${dato.iddepartAreax}">Eliminar</a>&emsp14;
+                        <a href="eliminarDepartArea.upeu?iddepartAreax=${dato.idDepartArea}">Eliminar</a>&emsp14;
                         <a href="modificarDepartAreaX.upeu?idDepartArea=${dato.idDepartArea}">Modificar</a>
                     </td>
                     
