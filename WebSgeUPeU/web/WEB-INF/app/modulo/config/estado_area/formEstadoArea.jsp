@@ -15,8 +15,8 @@
     </head>
     <body>
         <div>
-            <c:url var="saveEstadoAreax"  value="guardarEstadoArea.upeu" />
-            <fm:form modelAttribute="ModeloEstadoArea" method="post" action="${saveEstadoAreax}">
+            <c:url var="saveEstadoArea"  value="guardarEstadoArea.upeu" />
+            <fm:form modelAttribute="ModeloEstadoArea" method="post" action="${saveEstadoArea}">
                 <table>
                     <tr>
                         <td><fm:label path="estadometa">Estadometa</fm:label> </td>

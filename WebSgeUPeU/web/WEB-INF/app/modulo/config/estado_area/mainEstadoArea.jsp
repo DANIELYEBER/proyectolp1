@@ -16,14 +16,14 @@
         
         <c:out value="${saludo}"/>
         
-        <h1>Administracion de EstadoArea!</h1>
+        <h1>Administracion de Estado Area!</h1>
         <a href="dmp1.upeu">Regresar inicio</a> &emsp14;
         <a href="formEstadoArea.upeu">Crear EstadoArea</a>
         
         
         <div id="idFormulario" align="center">
             
-        <form  id="formBuscar" action="buscarEstadoAreax.upeu"  method="post" name="formBuscar" >
+        <form  id="formBuscar" action="buscarEstadoArea.upeu"  method="post" name="formBuscar" >
         <table align="center"  class="myform">
         
         <tr align="center">
@@ -63,7 +63,7 @@
                    
                     <td></td>
                     <td>
-                        <a href="eliminarEstadoArea.upeu?idEstadoAreax=${dato.idEstadoAreax}">Eliminar</a>&emsp14;
+                        <a href="eliminarEstadoArea.upeu?idEstadoAreax=${dato.idEstadoArea}">Eliminar</a>&emsp14;
                         <a href="modificarEstadoAreaX.upeu?idEstadoArea=${dato.idEstadoArea}">Modificar</a>
                     </td>
                     
