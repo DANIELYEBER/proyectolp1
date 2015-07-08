@@ -22,12 +22,10 @@
 	margin: 2px;
 	padding: 4px;
 	background-image: url(../../resource/img/cris.png);
-	 background-attachment: fixed;
+	background-attachment: fixed;
         background-size: 150%;
         
 }
-
-    
 
 div{
 	-moz-border-radius: 4px;
@@ -50,7 +48,6 @@ th {
 	-moz-border-radius: 2px;
 	-webkit-border-radius: 2px;
 }
-
 td {
 	font-weight: normal;
 	color: #F30;
@@ -92,11 +89,10 @@ td.msj {
 	background-color: #F8F5E1;
 	text-align: center;
 }
-
 td.group {
 	font-size: .8em;
 	font-weight: bold;
-	color: #0F61C1;
+	color: #001f3f;
 	background-color: #E8EEF0;
 	text-align: center;
 }
@@ -213,5 +209,4 @@ label.error {
     font-size: 11px;
     font-style: italic;
     font-weight: normal;
-
 }
