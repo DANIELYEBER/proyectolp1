@@ -11,8 +11,7 @@ body{
 	padding: 0px;
 	/*background-image: url(../../resource/img/bg.png);*/
 	/* background-attachment: fixed;*/
-        background:url("../resource/imagenes/cris.jpg") repeat-x;
-        background-size: 100%;
+        background-color: aqua;
         
 }
 
@@ -40,7 +39,7 @@ th {
 
 td {
 	font-weight: normal;
-	color: indigo;
+	color: #F30;
 	padding-left: 3px;
 	padding-right: 3px;
 	background-color: #F8F8F8;
