@@ -31,9 +31,9 @@
 					
                                     <MARQUEE SCROLLDELAY =200> <h1>Ingresar al Sistema</h1> </MARQUEE>
                             
-					<label class="grey" for="log">Usuario:</label>
+					<label class="grey" for="log">User Name:</label>
                                         <input class="field" type="text" name="usuario1" id="username" value="" size="23"  required="required"/>
-                                        <label class="grey" for="pwd">Contraseña:</label>
+                                        <label class="grey" for="pwd">Password:</label>
                                         <input class="field" type="password" name="password" id="password" size="23" accept="required"/>	            	        			
                                         <input type="submit" name="submit" value="Login" class="bt_register" />
 					

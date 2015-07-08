@@ -17,8 +17,7 @@
 <!--            `id_areas``nombre``descripcion``codigo`-->
             <c:url var="updateDepartamentos"  value="actualizarDepartamentos.upeu" />
             <fm:form modelAttribute="ModeloDepartamentos" method="post" action="${updateDepartamentos}">
-                <table>
-                                   
+                <table>                                 
                     <tr>
                         <td><fm:label path="nombre">Nombre</fm:label> </td>
                         <td><fm:input path="nombre" size="60" /></td>
@@ -32,9 +31,7 @@
                         <td><fm:label path="codigo">Codigo</fm:label> </td>
                         <td><fm:input path="codigo" size="60" /></td>
                     </tr>
-
-                    <tr>        
-                        
+                    <tr>                               
                         <td colspan="2">
                         <fm:hidden path="idDepartamento" />
                             <input type="submit" value="Guardar" >
