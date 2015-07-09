@@ -27,13 +27,13 @@
 			
 			<div class="left">
 				<!-- Login Form -->
-                                <form class="clearfix" action="main.upeu" method="post">
+                                <form class="clearfix" action="main.upeu" method="get">
 					
                                         <h1>Ingresar al Sistema</h1>                         
 					<label class="grey" for="log">User Name:</label>
-                                        <input class="field" type="text" name="usuario1" id="username" value="" size="23"  required="required"/>
+                                        <input class="field" type="text" name="persona" id="username" value="" size="23"  required="required"/>
                                         <label class="grey" for="pwd">Password:</label>
-                                        <input class="field" type="password" name="password" id="password" size="23" accept="required"/>	            	        			
+                                        <input class="field" type="password" name="clave" id="password" size="23" accept="required"/>	            	        			
                                         <input type="submit" name="submit" value="Login" class="bt_register" />
 					
 				</form>

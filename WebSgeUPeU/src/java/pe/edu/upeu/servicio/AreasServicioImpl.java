@@ -11,6 +11,7 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 import pe.edu.upeu.dao.AreasDaoInterface;
 import pe.edu.upeu.modelo.GloAreas;
+import pe.edu.upeu.modelo.GloPersona;
 
 @Service(value = "AreasServicio")
 @Transactional(propagation = Propagation.SUPPORTS, readOnly = true)
@@ -47,6 +48,11 @@ public class AreasServicioImpl implements AreasServicioInterface{
     public List<GloAreas> buscarAreas(String areas){
        return areasDao.buscarAreas(areas);
    }
+
+    @Override
+    public List<GloPersona> validarUsuarioTr(GloPersona usuarioEnt) {
+        return areasDao.validarUsuarioTr(usuarioEnt);
+    }
 
 }
 

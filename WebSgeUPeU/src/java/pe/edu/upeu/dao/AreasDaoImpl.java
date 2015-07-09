@@ -8,9 +8,11 @@ package pe.edu.upeu.dao;
 
 import java.util.List;
 import org.hibernate.SessionFactory;
+import org.hibernate.criterion.Expression;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import pe.edu.upeu.modelo.GloAreas;
+import pe.edu.upeu.modelo.GloPersona;
 import syscenterlife.dmp.core.data.DataAccess;
 
 /**
@@ -35,16 +37,26 @@ public class AreasDaoImpl extends DataAccess<GloAreas> implements AreasDaoInterf
 
     } 
     
-    public boolean validate(String user, String pass){
-        
-        //String user=sesionFactory.getCurrentSession().createSQLQuery("select usuario from glo_persona where usuario=\"goku\" and clave=\"123456\"")
-        return true;
-    }
-    
    
     
 
-  
+    @Override
+    public List<GloPersona> validarUsuarioTr(GloPersona usuarioEnt) {
+
+        List<GloPersona> resultado = null;
+        String usuario = usuarioEnt.getUsuario();
+        String clave = usuarioEnt.getClave();
+        try {
+            resultado = (List<GloPersona>) sessionFactoryx.getCurrentSession().createCriteria(GloPersona.class)
+                    .add(Expression.eq("usuario", usuario))
+                    .add(Expression.eq("clave", clave)).list();
+        } catch (Exception e) {
+        } finally {
+            sessionFactoryx.close();
+        }
+        System.out.println("numeroooooooooo"+resultado.size());
+        return resultado;
+    }
     
     
     
