@@ -15,16 +15,17 @@
         
 }*/
 
- body{
+body{
 	font: 1em "Trebuchet MS", Verdana, Helvetica, sans-serif; text-align: center;
 	color: darkgreen;
 	color: blue;
-	margin: 2px;
-	padding: 4px;
-	background-attachment: fixed;
-        background-size: 150%;
-        background: url(../resource/imagenes/cris.png);
+	margin: 0px;
+	padding: 0px;
+	background-image: url(../../resource/img/bg.png);
+	 background-attachment: fixed;
+        background-color: aqua;
         
+
 }
 
 div{

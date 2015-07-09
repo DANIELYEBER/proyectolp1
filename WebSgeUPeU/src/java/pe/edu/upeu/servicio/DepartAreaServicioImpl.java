@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 
 package pe.edu.upeu.servicio;
 
@@ -14,10 +10,10 @@ import org.springframework.transaction.annotation.Transactional;
 import pe.edu.upeu.dao.DepartAreaDaoInterface;
 import pe.edu.upeu.modelo.GloDepartArea;
 
-/**
- *
- * @author USERS
- */
+
+
+
+
 @Service(value = "DepartAreaServicio")
 @Transactional(propagation = Propagation.SUPPORTS, readOnly = true)
 public class DepartAreaServicioImpl implements DepartAreaServicioInterface{
@@ -52,7 +48,5 @@ public class DepartAreaServicioImpl implements DepartAreaServicioInterface{
     @Override
     public List<GloDepartArea> buscarDepartArea(String DepartArea){
        return DepartAreaDao.buscarDepartArea(DepartArea);
-   }
-
-    
+   } 
 }
