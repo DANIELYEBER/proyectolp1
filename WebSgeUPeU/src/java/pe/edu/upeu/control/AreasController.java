@@ -66,7 +66,7 @@ public ModelAndView irFormulario(@ModelAttribute("modeloAreas") GloAreas areas,B
     modelo.put("listaTemporadaX", AreasServicio.listarAreas());
     modelo.put("listaTemporada2", "");
     modelo.put("listaTemporada3", "");
-    System.out.println("Veeeeer"+AreasServicio.listarAreas().size());
+    System.out.println("Veeer"+AreasServicio.listarAreas().size());
     return new ModelAndView("modulo/config/areas/formAreas",modelo);
 }
 
@@ -121,5 +121,5 @@ public  ModelAndView buscarAreas(HttpServletRequest r) {
    return new ModelAndView("modulo/config/areas/mainAreas",modelo);
 }
 
+ }
 
-}
