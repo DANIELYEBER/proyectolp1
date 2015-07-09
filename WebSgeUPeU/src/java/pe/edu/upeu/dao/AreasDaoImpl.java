@@ -33,7 +33,13 @@ public class AreasDaoImpl extends DataAccess<GloAreas> implements AreasDaoInterf
 //               .setString(0, "%"+periodo+"%")               
                .list();
 
-    }   
+    } 
+    
+    public boolean validate(String user, String pass){
+        
+        //String user=sesionFactory.getCurrentSession().createSQLQuery("select usuario from glo_persona where usuario=\"goku\" and clave=\"123456\"")
+        return true;
+    }
     
    
     

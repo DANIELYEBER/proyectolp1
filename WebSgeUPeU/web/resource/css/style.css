@@ -41,16 +41,16 @@ table {
 
 th {
 	font-weight: bold;
-	color: white;
+	color: #0072b1;
 	padding: 2px;
-	background-color: darkorange;
+	background-color: rgb(176, 166, 154);
 	border-bottom: lime solid 2px;
 	-moz-border-radius: 2px;
 	-webkit-border-radius: 2px;
 }
 td {
 	font-weight: normal;
-	color: #F30;
+	color: #555;
 	padding-left: 3px;
 	padding-right: 3px;
 	background-color: #F8F8F8;

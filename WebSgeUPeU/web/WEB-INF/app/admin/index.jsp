@@ -7,13 +7,13 @@
     <title>SysSge@life</title>  	
 
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />	
-    <link rel="stylesheet" href="<c:url value="/resource/slide/css/style.css"/>" type="text/css" media="screen" />
-    <link rel="stylesheet" href="<c:url value="/resource/slide/css/slide.css"/>" type="text/css" media="screen" />
+    <link rel="stylesheet" href="resource/bootstrap-3.1.1-dist/css/bootstrap.min.css"/>
 
 
 
     <script src="<c:url value="/resource/jquery/jquery.min.js"/>" type="text/javascript"></script>
     <script src="<c:url value="/resource/slide/js/slide.js"/>" type="text/javascript"></script>
+    <link rel="stylesheet" href="resource/bootstrap-3.1.1-dist/js/bootstrap.min"/>
 	
 	
 	

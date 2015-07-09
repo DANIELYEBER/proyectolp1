@@ -11,6 +11,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
+        
     </head>
     <body>
         
@@ -24,7 +25,7 @@
         <div id="idFormulario" align="center">
             
         <form  id="formBuscar" action="buscarEstadoAreax.upeu"  method="post" name="formBuscar" >
-        <table align="center"  class="myform">
+        <table align="center"  class="table table-striped">
         
         <tr align="center">
         &nbsp;&nbsp;

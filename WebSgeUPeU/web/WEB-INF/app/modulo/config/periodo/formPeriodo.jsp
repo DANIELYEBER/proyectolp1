@@ -12,15 +12,16 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
+        <link rel="stylesheet" href="../../../../../resource/bootstrap-3.1.1-dist/css/bootstrap-theme.min.css"/>    
     </head>
     <body>
         <div>
             <c:url var="saveperiodox"  value="guardarPeriodo.upeu" />
-            <fm:form modelAttribute="modeloPeriodo" method="post" action="${saveperiodox}">
-                <table>
+            <fm:form modelAttribute="modeloPeriodo" cssClass="control-form" method="post" action="${saveperiodox}">
+                <table class="table">
                     <tr>
-                        <td><fm:label path="periodo">Periodo</fm:label> </td>
-                        <td><fm:input path="periodo" /></td>
+                        <td><fm:label  cssClass="control-label" path="periodo">Periodo</fm:label> </td>
+                        <td><fm:input path="periodo" cssClass="control" /></td>
                     </tr>
                     <tr>
                         <td><fm:label path="descripcion">Descripci&oacute;n</fm:label> </td>
